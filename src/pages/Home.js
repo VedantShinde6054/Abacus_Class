@@ -73,7 +73,12 @@ function Index() {
       </nav>
 
       <section className="hero-section">
-        <div className="back">
+        <div
+          className="back"
+          style={{
+            backgroundImage: 'url("assests/images/back-3.jpeg")',
+          }}
+        >
           {/* <img src="assests/images/back-3.jpeg" /> */}
           <div className="d-flex align-items-center justify-content-center fs-1">
             <div className="container">
