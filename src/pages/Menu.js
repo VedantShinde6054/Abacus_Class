@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import Continuous from "./continuous";
 function Menu() {
   return (
     <Fragment>
@@ -71,6 +72,7 @@ function Menu() {
               <span className="navbar-toggler-icon"></span>
             </button>
           </div>
+          <Continuous />
         </nav>
       </div>
     </Fragment>

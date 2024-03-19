@@ -1,0 +1,16 @@
+.marquee {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+  background: rgba(0, 0, 0, 0.125);
+  padding: 4px 0;
+  width: 100%;
+  border-radius: 15px;
+}
+.marquee1 {
+  margin-top: 125px;
+  margin-left: -33px;
+  padding: 0 10px;
+  width: 100%;
+}

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Menu from "./Menu";
+import Continuous from "./continuous";
 function Index() {
   return (
     <Fragment>
