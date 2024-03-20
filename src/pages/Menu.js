@@ -58,9 +58,9 @@ function Menu() {
                 </ul>
               </div>
             </div>
-            <a href="#" className="login-button">
+            <Link className="login-button" to="/Login">
               Login
-            </a>
+            </Link>
             <button
               className="navbar-toggler pe-0"
               type="button"

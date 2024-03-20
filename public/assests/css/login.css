@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.backgroundL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: url(back-3.jpeg) no-repeat center center/cover; */
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 1000px;
+}
+.backgroundL::before {
+  background-color: rgba(33, 139, 135, 0.362);
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.mainL {
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 3px solid #31279d; /* Dark blue, matching the contact us page */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Semi-transparent white, matching the contact us page */
+  backdrop-filter: blur(25px);
+  position: relative;
+  margin-top: 50px;
+}
+
+.headerL {
+  position: absolute;
+  width: 170px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #f44770; /* Pink, matching the contact us page */
+  border-radius: 0 0 10px 10px;
+  color: white;
+}
+
+.formL {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#inputL[type="text"],
+#passwordL[type="password"] {
+  padding: 15px;
+  border: 2px solid #31279d; /* Dark blue, matching the contact us page */
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white, matching the contact us page */
+  color: #333; /* Darker text color */
+  font-weight: bold; /* Make font bolder */
+}
+
+.form_wrapperL {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+  color: #31279d; /* Dark blue, matching the contact us page */
+  transition: 0.2s;
+}
+
+input[type="text"]:focus + label,
+input[type="password"]:focus + label {
+  font-weight: bold; /* Make font bolder when input is focused */
+}
+
+.material-icons {
+  position: absolute;
+  right: 10px;
+  color: #31279d; /* Dark blue, matching the contact us page */
+  font-size: 20px !important;
+}
+
+.remember_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #31279d; /* Dark blue, matching the contact us page */
+}
+
+a {
+  color: #31279d; /* Dark blue, matching the contact us page */
+  font-weight: bold; /* Make font bolder */
+}
+a:hover {
+  color: black;
+}
+
+.buttonL {
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #f44770; /* Pink, matching the contact us page */
+  color: white;
+  font-weight: bold; /* Make font bolder */
+  transition: 0.5s;
+}
+.buttonL:hover {
+  background: #31279d;
+}
+
+input:valid + label,
+input:focus + label {
+  background-color: white;
+  color: black;
+  transform: translate(10px, -20px);
+  padding: 2px 5px;
+  font-size: 9px;
+  border-radius: 4px;
+}
+
+.new_account {
+  text-align: center;
+  color: #31279d; /* Dark blue, matching the contact us page */
+  margin-top: 20px;
+  font-weight: bold; /* Make font bolder */
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  box-shadow: 15px 0 0 0 #f44770;
+  border-top-right-radius: 50%;
+}
+header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  box-shadow: -15px 0 0 0 #f44770;
+  border-top-left-radius: 50%;
+}
+
+h4 {
+  font-size: 20px;
+}
