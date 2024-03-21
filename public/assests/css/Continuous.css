@@ -10,7 +10,11 @@
 }
 .marquee1 {
   margin-top: 125px;
-  margin-left: -33px;
+  margin-left: -10px;
   padding: 0 10px;
   width: 100%;
 }
+
+/* @media (min-width: 767px) {
+  margin-left: 0px;
+} */

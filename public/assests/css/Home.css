@@ -1,11 +1,11 @@
 .navbar {
   background-color: #fff;
   height: 80px;
-  margin: 20px;
+  /* margin: 20px; */
   margin-top: 0px;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   padding: 0.5rem;
-  border: 5px solid #037b4d;
+  border: 3px solid #037b4d;
 }
 .navbar-brand {
   font-weight: 500;
@@ -49,6 +49,9 @@
 .nav-link.active {
   color: #000;
 }
+
+/* Responsive css */
+
 @media (min-width: 991px) {
   .nav-link::before {
     content: "";
