@@ -43,7 +43,7 @@ a {
 }
 .info-wrap {
   width: 35%;
-  height: 571px;
+  height: 583px;
   padding: 40px;
   float: left;
   display: block;
@@ -57,7 +57,9 @@ a {
 }
 .info-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
+  color: navajowhite;
+  font-style: italic;
   letter-spacing: 0.5px;
 }
 .info-sub-title {

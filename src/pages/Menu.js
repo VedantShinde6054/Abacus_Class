@@ -8,7 +8,7 @@ function Menu() {
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
             <Link className="navbar-brand me-auto" to="/">
-              logo
+              <img className="Clogo" src="assests/images/classlogo.png" />
             </Link>
 
             <div
@@ -18,9 +18,12 @@ function Menu() {
               aria-labelledby="offcanvasNavbarLabel"
             >
               <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                  Logo
-                </h5>
+                <img
+                  className="offcanvas-title"
+                  id="offcanvasNavbarLabel"
+                  src="assests/images/classlogo.png"
+                />
+
                 <button
                   type="button"
                   className="btn-close"
@@ -46,9 +49,9 @@ function Menu() {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link mx-lg-2" href="#">
+                    <Link className="nav-link mx-lg-2" to="/About">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link mx-lg-2" to="/Contact">
