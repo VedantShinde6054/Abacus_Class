@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import Continuous from "./continuous";
+import Continuous from "../pages/continuous";
 function Menu() {
   return (
     <Fragment>
@@ -36,19 +36,19 @@ function Menu() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link mx-lg-2" href="#">
-                      Registration-1
-                    </a>
+                  <Link className="nav-link mx-lg-2" to="/StudentRegister">
+                      Admission
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link mx-lg-2" href="#">
-                      Registartion-2
-                    </a>
+                  <Link className="nav-link mx-lg-2" to="/TeacherTraining">
+                      Teacher training
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link mx-lg-2" href="#">
+                  <Link className="nav-link mx-lg-2" to="/About">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link mx-lg-2" to="/Contact">
@@ -59,7 +59,7 @@ function Menu() {
               </div>
             </div>
             <Link className="login-button" to="/Login">
-              Login
+              Account
             </Link>
             <button
               className="navbar-toggler pe-0"

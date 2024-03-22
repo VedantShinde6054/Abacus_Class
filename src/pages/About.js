@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
 
 function About() {
-  return;
-  {
-    <Fragment>home</Fragment>;
-  }
+  return(
+    <Fragment>About us</Fragment>
+  );
 }
 
 export default About;
