@@ -27,9 +27,9 @@
   left: 0;
 }
 .mainL {
-  width: 350px;
-  height: 450px;
-  padding: 20px;
+  width: 450px;
+  height: 550px;
+  padding: 30px;
   border-radius: 30px;
   border: 3px solid #31279d; /* Dark blue, matching the contact us page */
   background-color: rgba(
@@ -45,7 +45,7 @@
 
 .headerL {
   position: absolute;
-  width: 170px;
+  width: 270px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -54,6 +54,7 @@
   border-radius: 0 0 10px 10px;
   color: white;
 }
+
 
 .formL {
   margin-top: 80px;
@@ -77,6 +78,27 @@
   ); /* Semi-transparent white, matching the contact us page */
   color: #333; /* Darker text color */
   font-weight: bold; /* Make font bolder */
+}
+
+.selectR{
+  padding: 15px;
+  border: 2px solid #31279d; /* Dark blue, matching the contact us page */
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white, matching the contact us page */
+  color: #333; /* Darker text color */
+  font-weight: bold;
+}
+
+option{
+  font-size: large;
+  cursor: pointer;
 }
 
 .form_wrapperL {
@@ -182,6 +204,6 @@ header::after {
   border-top-left-radius: 50%;
 }
 
-h4 {
-  font-size: 20px;
+h3 {
+  font-size: 2rem;
 }

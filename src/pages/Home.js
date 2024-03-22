@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
+import '../assets/css/Home.css';
+import bgimg from '../assets/images/back-3.jpeg';
 
-import Menu from "./Menu";
+import Menu from "../components/Menu";
 function Index() {
   return (
     <Fragment>
@@ -9,7 +11,7 @@ function Index() {
         <div
           className="back"
           style={{
-            backgroundImage: 'url("assests/images/back-3.jpeg")',
+            backgroundImage: `url(${bgimg})`
           }}
         >
           {/* <img src="assests/images/back-3.jpeg" /> */}
@@ -41,21 +43,21 @@ function Index() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src="assests/images/img-1.jpg"
+                      src={require('../assets/images/img-1.jpg')}
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="assests/images/img-2.jpg"
+                     src={require('../assets/images/img-2.jpg')}
                       className="d-block w-100"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="assests/images/img-3.jpg"
+                      src={require('../assets/images/img-3.jpg')}
                       className="d-block w-100"
                       alt="..."
                     />

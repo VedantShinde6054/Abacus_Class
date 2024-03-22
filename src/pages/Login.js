@@ -1,12 +1,15 @@
 import React, { Fragment } from "react";
-import Menu from "./Menu";
+import Menu from "../components/Menu";
+import "../assets/css/login.css";
+import bgimg from "../assets/images/back-3.jpeg";
+
 function Login() {
   return (
     <Fragment>
       <div
         className="backgroundL"
         style={{
-          backgroundImage: 'url("assests/images/back-3.jpeg")',
+          backgroundImage: `url(${bgimg})`,
         }}
       >
         <div>
@@ -14,9 +17,16 @@ function Login() {
         </div>
         <main className="mainL">
           <header className="headerL">
-            <h4>Login</h4>
+            <center><h3>Login</h3></center>
           </header>
           <form className="formL">
+            <div className="form_wrapperL">
+              <select class="form-select selectR">
+                <option selected disabled>Login As</option>
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+              </select>
+            </div>
             <div className="form_wrapperL">
               <input id="inputL" type="text" required />
               <label for="input">Username</label>
