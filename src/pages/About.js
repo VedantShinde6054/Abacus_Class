@@ -7,7 +7,7 @@ function About() {
         className="bodyA"
         style={{ backgroundImage: 'url("assests/images/back-3.jpeg")' }}
       >
-        <div>
+        <div className="navA">
           <Menu />
         </div>
         <header className="header1">
