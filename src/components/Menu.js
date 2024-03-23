@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import Continuous from "../pages/continuous";
+import Continuous from "./continuous";
 function Menu() {
   return (
     <Fragment>

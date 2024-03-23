@@ -18,7 +18,7 @@
   height: 100%;
 }
 .backgroundL::before {
-  background-color: rgba(33, 139, 135, 0.362);
+  background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
   top: 0;
@@ -36,7 +36,7 @@
     255,
     255,
     255,
-    0.3
+    0.114
   ); /* Semi-transparent white, matching the contact us page */
   backdrop-filter: blur(25px);
   position: relative;
@@ -54,7 +54,6 @@
   border-radius: 0 0 10px 10px;
   color: white;
 }
-
 
 .formL {
   margin-top: 80px;
@@ -80,7 +79,7 @@
   font-weight: bold; /* Make font bolder */
 }
 
-.selectR{
+.selectR {
   padding: 15px;
   border: 2px solid #31279d; /* Dark blue, matching the contact us page */
   width: 100%;
@@ -96,7 +95,7 @@
   font-weight: bold;
 }
 
-option{
+option {
   font-size: large;
   cursor: pointer;
 }
@@ -110,8 +109,8 @@ option{
 label {
   position: absolute;
   left: 10px;
-  font-size: 12px;
-  color: #31279d; /* Dark blue, matching the contact us page */
+  font-size: 1rem;
+  color: #100d2e; /* Dark blue, matching the contact us page */
   transition: 0.2s;
 }
 
@@ -139,11 +138,11 @@ input[type="password"]:focus + label {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #31279d; /* Dark blue, matching the contact us page */
+  color: #96d0f1;
 }
 
 a {
-  color: #31279d; /* Dark blue, matching the contact us page */
+  color: #96d0f1;
   font-weight: bold; /* Make font bolder */
 }
 a:hover {
@@ -176,7 +175,7 @@ input:focus + label {
 
 .new_account {
   text-align: center;
-  color: #31279d; /* Dark blue, matching the contact us page */
+  color: #96d0f1;
   margin-top: 20px;
   font-weight: bold; /* Make font bolder */
 }

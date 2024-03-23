@@ -12,7 +12,7 @@
   background-attachment: fixed;
 }
 .main-container::before {
-  background-color: rgba(33, 139, 135, 0.362);
+  background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
   top: 0;
