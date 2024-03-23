@@ -1,15 +1,16 @@
 import React, { Fragment } from "react";
 import Menu from "../components/Menu";
-import Continuous from "./continuous";
-import '../assets/css/Contact.css';
-import bgimg from '../assets/images/back-3.jpeg';
+
+import "../assets/css/Contact.css";
+import bgimg from "../assets/images/back-3.jpeg";
+
 function Contact() {
   return (
     <Fragment>
       <Menu />
       <div
         className="main-container"
-        style={{  backgroundImage: `url(${bgimg})` }}
+        style={{ backgroundImage: `url(${bgimg})` }}
       >
         <section id="section-wrapper">
           <div className="box-wrapper">
