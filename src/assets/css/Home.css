@@ -88,7 +88,7 @@
   background-attachment: fixed;
 }
 
-.back::before {
+/* .back::before {
   background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
@@ -96,7 +96,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */
 .container {
   margin-top: 150px;
   width: 100%;

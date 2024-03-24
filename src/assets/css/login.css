@@ -10,14 +10,13 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: url(back-3.jpeg) no-repeat center center/cover; */
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
-.backgroundL::before {
+/* .backgroundL::before {
   background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
@@ -25,7 +24,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */
 .mainL {
   width: 450px;
   height: 550px;

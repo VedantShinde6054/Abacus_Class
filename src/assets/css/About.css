@@ -12,24 +12,23 @@
 
 /* Global Styles */
 .bodyA {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   background-size: cover;
   width: 1550px;
   height: unset;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-position-x: fixed;
 }
-.bodyA::before {
+/* .bodyA::after {
   background-color: rgba(107, 108, 108, 0.205);
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */
 .header1 {
   text-align: center;
   padding-top: 140px;
@@ -43,21 +42,32 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .content {
-  height: 150px;
+  height: 320px;
+  display: inline-grid;
 }
 
 .mainA {
   display: flex;
   width: 100%;
-  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
 }
+.certified {
+  width: 100%;
+  height: 50px;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
 #mission,
 #vision {
-  flex: 1;
+  flex: 1 1;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 25px;
+  height: 430px;
+  background-color: rgb(255 255 255 / 82%);
   border-radius: 20px;
   border: 3px solid blue;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -71,32 +81,74 @@ h1 {
 
 #mission:hover,
 #vision:hover {
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
-
-h2 {
+.InfoA {
+  background-color: #b3e5fcde;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px;
+  margin-top: 100px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.InfoA1 {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.sec-info {
+  display: grid;
+  margin: 15px;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.InfoA2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.sec-info2 {
+  display: grid;
+  margin: 15px;
+  position: relative;
+  width: 80%;
+  align-items: center;
+}
+.headingA {
   font-size: 36px;
-  color: #333;
-  margin-bottom: 20px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 15px;
+  margin-left: 200px;
 }
 
 p {
   font-size: 20px;
   line-height: 1.6;
-  color: #0f7b49;
+  color: #03502c;
 }
 
 .containerA {
   text-align: center;
-  padding-top: 30px;
-
-  padding: 45px 0;
+  padding: 35px 0;
 }
 
 .headerA {
-  color: #444;
-  font-size: 20px;
   line-height: 50px;
+  height: 80px;
+  margin: 20px 0;
 }
 
 .sub-containerA {
@@ -121,7 +173,8 @@ p {
 }
 
 .teamsA:hover {
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
+  transform: translateY(-10px);
 }
 
 .teamsA img {
@@ -133,40 +186,53 @@ p {
 .nameA {
   padding: 12px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 .desigA {
   font-style: italic;
   color: #0d6efd;
+  font-size: 18px;
 }
 
 .aboutA {
   margin: 20px 0;
+  font-size: medium;
   font-weight: lighter;
-  color: #4e4e4e;
+  color: #182101;
 }
 
 .social-links {
   margin: 14px;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
 }
 
-.social-links a {
+.social-links li {
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  transition: 0.4s;
-  margin-right: 10px;
+}
+.social-links li i {
+  background: #a6c7debe;
+  color: #080d18;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
-.social-links a:hover {
-  transform: scale(1.5);
+.social-links li i:hover {
+  transform: scale(1.1);
+  background: #018f9f;
+  color: #ffff;
 }
 
-.social-links a i {
+/* .social-links a i {
   color: #444;
-}
+} */
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
