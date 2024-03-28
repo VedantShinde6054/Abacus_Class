@@ -12,7 +12,7 @@ function About() {
         </div>
         <header className="header1">
           <h1>About Us</h1>
-        </div>
+        </header>
         <div className="certified">
           An ISO Certified Classes- Learn Abacus and Vedic Math with Experts
         </div>

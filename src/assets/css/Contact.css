@@ -5,12 +5,12 @@
 }
 .main-container {
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-repeat: repeat;
   background-attachment: fixed;
 }
-.main-container::before {
+/* .main-container::before {
   background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: absolute;
@@ -39,11 +39,10 @@ a {
   margin: auto;
   margin-top: 35px;
   border-radius: 30px;
-  border: 3px solid #31279d;
 }
 .info-wrap {
-  width: 40%;
-  height: 583px;
+  width: 35%;
+  height: 600px;
   padding: 40px;
   float: left;
   display: block;
@@ -116,12 +115,14 @@ a {
   color: #000000;
 }
 .form-wrap {
-  width: 60%;
+  width: 65%;
+  height: 600px;
   float: right;
   padding: 40px 25px 35px 25px;
   border-radius: 0px 30px 30px 0px;
   background-color: rgba(255, 255, 255, 0.114);
   backdrop-filter: blur(25px);
+  border: 3px solid #31279d;
 }
 .form-title {
   text-align: left;

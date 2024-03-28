@@ -11,7 +11,7 @@ function Index() {
         <div
           className="back"
           style={{
-            backgroundImage: `url(${bgimg})`,,
+            backgroundImage: `url(${bgimg})`
           }}
         >
           <div className="d-flex align-items-center justify-content-center fs-1">
@@ -96,8 +96,8 @@ function Index() {
             <div class="row ab-info">
               <div class="col ab-info-txt ">
                 <h4>
-                  What is ABACUS ?{" "}
-                  <span id="span1">The Gateway to Mental Math Mastery</span>{" "}
+                  {" "}
+                  <span id="span1">What is ABACUS ?</span>{" "}
                 </h4>
                 <strong>The Abacus</strong> is a historic calculation tool with
                 rods and beads that represent numbers when slid along the rods.
@@ -145,7 +145,7 @@ function Index() {
               </div>
             </div>
           </div>
-          <div className="slate-info">
+          {/* <div className="slate-info">
             <div className="slate-info-txt">
               <h4>Parts of ABACUS :- </h4>
               <li>
@@ -174,7 +174,7 @@ function Index() {
                 alt=".."
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </Fragment>

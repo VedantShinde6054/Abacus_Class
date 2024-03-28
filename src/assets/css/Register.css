@@ -11,7 +11,7 @@
   justify-content: center;
   background-size: cover;
   background-repeat: repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   width: 100%;
   min-height: 100vh;
 }
@@ -32,9 +32,9 @@
   margin-top: 10%;
 }
 
+
 .headerR {
   position: absolute;
-  width: 450px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -51,11 +51,11 @@
   gap: 20px;
 }
 
-#inputL[type="text"],
-#passwordL[type="password"],
-#dateL[type="date"],
-#phoneL[type="tel"],
-#emailL[type="email"] {
+#inputR[type="text"],
+#passwordR[type="password"],
+#dateR[type="date"],
+#phoneR[type="tel"],
+#emailR[type="email"] {
   padding: 15px;
   border: 2px solid #31279d; /* Dark blue, matching the contact us page */
   width: 100%;
@@ -93,19 +93,10 @@
   align-items: center;
 }
 
-label {
-  position: absolute;
-  left: 220px;
-  font-size: 1rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgb(196, 0, 0);
-  transition: 0.2s;
-}
 
 input[type="text"]:focus + label,
 input[type="password"]:focus + label {
   font-weight: bold;
-  text-shadow: 0px 0px 0px rgba(1, 1, 1, 0.342);
 }
 
 .material-icons {
