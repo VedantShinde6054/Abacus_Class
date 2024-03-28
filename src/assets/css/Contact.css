@@ -6,13 +6,13 @@
 .main-container {
   /* background-image: url(back-3.jpeg); */
   background-size: cover;
-  width: 100%;
-  height: 1000px;
+  width: 100vw;
+  min-height: 100vh;
   background-repeat: repeat;
   background-attachment: fixed;
 }
 .main-container::before {
-  background-color: rgba(33, 139, 135, 0.362);
+  background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
   top: 0;
@@ -42,7 +42,7 @@ a {
   border-radius: 30px;
 }
 .info-wrap {
-  width: 35%;
+  width: 40%;
   height: 583px;
   padding: 40px;
   float: left;
@@ -114,7 +114,7 @@ a {
   color: #000000;
 }
 .form-wrap {
-  width: 65%;
+  width: 60%;
   float: right;
   padding: 40px 25px 35px 25px;
   border-radius: 0px 30px 30px 0px;

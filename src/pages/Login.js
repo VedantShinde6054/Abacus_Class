@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/login.css";
-import bgimg from "../assets/images/back-3.jpeg";
+import bgimg from "../assets/images/back-4.jpg";
 
 function Login() {
   return (
@@ -17,12 +17,16 @@ function Login() {
         </div>
         <main className="mainL">
           <header className="headerL">
-            <center><h3>Login</h3></center>
+            <center>
+              <h3>Login</h3>
+            </center>
           </header>
           <form className="formL">
             <div className="form_wrapperL">
               <select class="form-select selectR">
-                <option selected disabled>Login As</option>
+                <option selected disabled>
+                  Login As
+                </option>
                 <option value="student">Student</option>
                 <option value="admin">Admin</option>
               </select>

@@ -2,16 +2,16 @@
   font-size: 20px;
   font-style: italic;
   font-weight: 500;
-  color: black;
-  background: rgba(0, 0, 0, 0.125);
+  color: rgb(255, 255, 255);
+  background: rgba(133, 133, 133, 0.268);
   padding: 4px 0;
   width: 100%;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 .marquee1 {
   margin-top: 125px;
   margin-left: -10px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   width: 100%;
 }
 

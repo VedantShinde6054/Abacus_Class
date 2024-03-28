@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import Menu from "./Menu";
+import Menu from "../components/Menu";
+import "../assets/css/About.css";
+import bgimg from "../assets/images/back-4.jpg";
+
 function About() {
   return (
     <Fragment>
-      <div
-        className="bodyA"
-        style={{ backgroundImage: 'url("assests/images/back-3.jpeg")' }}
-      >
+      <div className="bodyA" style={{ backgroundImage: `url(${bgimg})` }}>
         <div className="navA">
           <Menu />
         </div>

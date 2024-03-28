@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import '../assets/css/Home.css';
-import bgimg from '../assets/images/back-3.jpeg';
+import "../assets/css/Home.css";
+import bgimg from "../assets/images/back-4.jpg";
 
 import Menu from "../components/Menu";
 function Index() {
@@ -11,13 +11,12 @@ function Index() {
         <div
           className="back"
           style={{
-            backgroundImage: `url(${bgimg})`
+            backgroundImage: `url(${bgimg})`,
           }}
         >
-          {/* <img src="assests/images/back-3.jpeg" /> */}
           <div className="d-flex align-items-center justify-content-center fs-1">
             <div className="container">
-              <div id="carouselExampleIndicators" className="carousel slide">
+              <div id="carouselExampleIndicators" className="carousel slide"> 
                 <div className="carousel-indicators">
                   <button
                     type="button"
@@ -43,22 +42,22 @@ function Index() {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img
-                      src={require('../assets/images/img-1.jpg')}
-                      className="d-block w-100"
+                      src={require("../assets/images/img-1.jpg")}
+                      className="d-block w-100 object-fit-xl-cover border rounded"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                     src={require('../assets/images/img-2.jpg')}
-                      className="d-block w-100"
+                      src={require("../assets/images/img-2.jpg")}
+                      className="d-block w-100 object-fit-xl-cover border rounded"
                       alt="..."
                     />
                   </div>
                   <div className="carousel-item">
                     <img
-                      src={require('../assets/images/img-3.jpg')}
-                      className="d-block w-100"
+                      src={require("../assets/images/img-3.jpg")}
+                      className="d-block w-100 object-fit-xl-cover border rounded"
                       alt="..."
                     />
                   </div>

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import '../assets/css/Continuous.css';
+import "../assets/css/Continuous.css";
 
 function Continuous() {
   return (

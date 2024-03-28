@@ -14,19 +14,17 @@
 .bodyA {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-size: cover;
-  width: 1550px;
-  height: unset;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: repeat;
   background-attachment: fixed;
-  background-position-x: fixed;
 }
 .bodyA::before {
-  background-color: rgba(33, 139, 135, 0.362);
+  background-color: rgba(107, 108, 108, 0.205);
   content: "";
   position: fixed;
   top: 0;
-  /* bottom: 0; */
+  bottom: 0;
   right: 0;
   left: 0;
 }
