@@ -89,8 +89,91 @@ function Index() {
               </div>
             </div>
           </div>
-          <div className="Abacus">
-            <div className="abacus1">What is Abacus ?</div>
+          <div class="container text-center container-content">
+            <div class="row">
+              <h1>About Abacus</h1>
+            </div>
+            <div class="row ab-info">
+              <div class="col ab-info-txt ">
+                <h4>
+                  What is ABACUS ?{" "}
+                  <span id="span1">The Gateway to Mental Math Mastery</span>{" "}
+                </h4>
+                <strong>The Abacus</strong> is a historic calculation tool with
+                rods and beads that represent numbers when slid along the rods.
+                It's utilized in modern times to enhance mental math skills,
+                particularly in children aged 5 to 14. <br /> It facilitates
+                various arithmetic operations, including addition, subtraction,
+                multiplication, and division, as well as decimal calculations
+                and handling negative numbers.
+              </div>
+              <div class="col ab-info-img">
+                <img
+                  src={require("../assets/images/advantages1.png")}
+                  className="advan1"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="container text-center">
+              <div class="row ab-info">
+                <div class="col ab-info-img">
+                  <img
+                    src={require("../assets/images/mentalArithematics.png")}
+                    className="mental1"
+                    alt=".."
+                  />
+                </div>
+                <div class="col ab-info-txt ">
+                  <h4>What is Mental Arithmetic ?</h4>
+                  <li>
+                    Mental Arithmetic is a term used in Abacus for the
+                    calculations done in mind.
+                  </li>
+                  <li>
+                    Even large numbers can be calculated in mind, that too
+                    within seconds.
+                  </li>{" "}
+                  <li>
+                    Mental arithmetic improves student's imagination skills
+                    Effective in cracking competitive time based tests.
+                  </li>{" "}
+                  <li>
+                    Mind calculation enhances the concentration level of child.
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="slate-info">
+            <div className="slate-info-txt">
+              <h4>Parts of ABACUS :- </h4>
+              <li>
+                The boundary on all 4 sides of the abacus is called the Frame.
+              </li>
+              <li>
+                The abacus which we are using has 17 rods. Each rod has 5 beads.
+              </li>
+              <li>
+                The abacus is divided into the upper and the lower part by a
+                horizontal bar called the Beam.
+              </li>
+              <li>
+                The beads in the lower part are the Lower Beads or the Earth
+                Beads.
+              </li>
+              <li>
+                The beads in the upper part are the Upper Beads or the Heaven
+                Beads.
+              </li>
+            </div>
+            <div className="slate-info-img">
+              <img
+                src={require("../assets/images/parts-of-abacus.jpg")}
+                className="slate1"
+                alt=".."
+              />
+            </div>
           </div>
         </div>
       </section>
