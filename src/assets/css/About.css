@@ -37,9 +37,9 @@
 h1 {
   font-size: 60px;
   font-weight: bold;
-  color: #b1aaff;
-  font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px#00513b;
 }
 .content {
   height: 320px;
