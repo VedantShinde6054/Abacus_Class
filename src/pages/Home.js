@@ -175,6 +175,28 @@ function Index() {
               />
             </div>
           </div>
+
+          <div class="container text-center">
+            <div class="row benifites">
+              <div class="col benifites-txt ">
+                <h4>Benifites of Abacus :-</h4>
+                <li>The process improves the listening ability</li>
+                <li>It Enhances the level of concentration</li>
+                <li>Develops the ability to visualize</li>
+                <li>Builds photographic memory</li>
+                <li>Enables perfect recall</li>
+                <li>The child becomes confident</li>
+                <li>Promotes Logical Thinking</li>
+              </div>
+              <div className=" col benifites-img">
+                <img
+                  src={require("../assets/images/abacus-advantages .png")}
+                  className="benifites1"
+                  alt=".."
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Fragment>
