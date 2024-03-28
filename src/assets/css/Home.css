@@ -150,7 +150,7 @@
   color: green;
 }
 
-.slate-info {
+/* .slate-info {
   background-color: #b3e5fcde;
   display: flex;
   flex-direction: row;
@@ -183,4 +183,29 @@
 }
 .slate1 {
   border-radius: 50px;
+} */
+.benifites {
+  margin-top: 50px;
 }
+.benifites-txt {
+  background-color: rgba(255, 255, 255, 0.114);
+  backdrop-filter: blur(25px);
+  padding: 50px;
+  line-height: 2.5;
+  text-align: justify;
+  border-radius: 50px;
+  font-size: 18.5px;
+  color: white;
+}
+
+.benifites1 {
+  height: 400px;
+  width: 90%;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+/* .col{
+  margin-left: 15px ;
+  margin-right: 15px ;
+ } */
