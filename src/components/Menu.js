@@ -24,7 +24,7 @@ function Menu() {
                 <img
                   className="offcanvas-title"
                   id="offcanvasNavbarLabel"
-                  src="assests/images/classlogo.png"
+                  src={require("../assets/images/classlogo.png")}
                 />
 
                 <button

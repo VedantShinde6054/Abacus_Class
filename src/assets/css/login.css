@@ -140,11 +140,11 @@ input[type="password"]:focus + label {
 }
 
 a {
-  color: #96d0f1;
+  color: #38ee00;
   font-weight: bold; /* Make font bolder */
 }
 a:hover {
-  color: black;
+  color: rgb(5, 104, 202);
 }
 
 .buttonL {
@@ -173,7 +173,7 @@ input:focus + label {
 
 .new_account {
   text-align: center;
-  color: #96d0f1;
+  color: #ffffff;
   margin-top: 20px;
   font-weight: bold; /* Make font bolder */
 }
