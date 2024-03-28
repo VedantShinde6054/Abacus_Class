@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Menu from "../components/Menu";
-
 import "../assets/css/Contact.css";
 import bgimg from "../assets/images/back-4.jpg";
 

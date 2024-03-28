@@ -5,29 +5,19 @@
   font-family: sans-serif;
 }
 
-.backgroundL {
+.backgroundR {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-  width: 100vw;
-
+  width: 100%;
+  min-height: 100vh;
 }
-.backgroundL::before {
-  background-color: rgba(107, 108, 108, 0.205);
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
-.mainL {
-  width: 450px;
-  height: 550px;
+
+.reg-main {
+  width: 800px;
   padding: 30px;
   border-radius: 30px;
   border: 3px solid #31279d; /* Dark blue, matching the contact us page */
@@ -42,9 +32,9 @@
   margin-top: 10%;
 }
 
-.headerL {
+.headerR {
   position: absolute;
-  width: 270px;
+  width: 450px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -54,7 +44,7 @@
   color: white;
 }
 
-.formL {
+.formR {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -62,7 +52,10 @@
 }
 
 #inputL[type="text"],
-#passwordL[type="password"] {
+#passwordL[type="password"],
+#dateL[type="date"],
+#phoneL[type="tel"],
+#emailL[type="email"] {
   padding: 15px;
   border: 2px solid #31279d; /* Dark blue, matching the contact us page */
   width: 100%;
@@ -78,7 +71,7 @@
   font-weight: bold; /* Make font bolder */
 }
 
-.selectR  {
+.selectReg {
   padding: 15px;
   border: 2px solid #31279d; /* Dark blue, matching the contact us page */
   width: 100%;
@@ -94,12 +87,7 @@
   font-weight: bold;
 }
 
-option  {
-  font-size: large;
-  cursor: pointer;
-}
-
-.form_wrapperL {
+.form_wrapperR {
   position: relative;
   display: flex;
   align-items: center;
@@ -107,21 +95,23 @@ option  {
 
 label {
   position: absolute;
-  left: 10px;
+  left: 220px;
   font-size: 1rem;
-  color: #100d2e; /* Dark blue, matching the contact us page */
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgb(196, 0, 0);
   transition: 0.2s;
 }
 
 input[type="text"]:focus + label,
 input[type="password"]:focus + label {
-  font-weight: bold; /* Make font bolder when input is focused */
+  font-weight: bold;
+  text-shadow: 0px 0px 0px rgba(1, 1, 1, 0.342);
 }
 
 .material-icons {
   position: absolute;
   right: 10px;
-  color: #31279d; /* Dark blue, matching the contact us page */
+  color: #31279d;
   font-size: 20px !important;
 }
 
@@ -134,21 +124,11 @@ input[type="password"]:focus + label {
 }
 
 .remember {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #96d0f1;
+  color: #ffffff;
 }
 
-a {
-  color: #96d0f1;
-  font-weight: bold; /* Make font bolder */
-}
-a:hover {
-  color: black;
-}
-
-.buttonL {
+.buttonR {
+  width: 50%;
   border: none;
   padding: 10px;
   border-radius: 25px;
@@ -160,23 +140,6 @@ a:hover {
 }
 .buttonL:hover {
   background: #31279d;
-}
-
-input:valid + label,
-input:focus + label {
-  background-color: white;
-  color: black;
-  transform: translate(10px, -20px);
-  padding: 2px 5px;
-  font-size: 9px;
-  border-radius: 4px;
-}
-
-.new_account {
-  text-align: center;
-  color: #96d0f1;
-  margin-top: 20px;
-  font-weight: bold; /* Make font bolder */
 }
 
 header::before {
@@ -204,4 +167,10 @@ header::after {
 
 h3 {
   font-size: 2rem;
+}
+
+.reg-title {
+  width: 40%;
+  color: white;
+  font-size: 18px;
 }
