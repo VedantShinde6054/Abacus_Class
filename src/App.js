@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Register from "./pages//StudentRegister";
 import TeacherTraining from "./pages/TeacherTraining";
+import Dashboard from "./admin/dashboard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>

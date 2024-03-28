@@ -7,11 +7,12 @@ function About() {
   return (
     <Fragment>
       <div className="bodyA" style={{ backgroundImage: `url(${bgimg})` }}>
-        <Menu />
-
-        <div className="header1">
-          <h1>About Us</h1>
+        <div className="navA">
+          <Menu />
         </div>
+        <header className="header1">
+          <h1>About Us</h1>
+        </header>
         <div className="certified">
           An ISO Certified Classes- Learn Abacus and Vedic Math with Experts
         </div>

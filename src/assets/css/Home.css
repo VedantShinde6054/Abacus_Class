@@ -93,15 +93,6 @@
   background-attachment: fixed;
 }
 
-/* .back::before {
-  background-color: rgba(107, 108, 108, 0.205);
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
 .container {
   margin-top: 150px;
   width: 100%;
@@ -192,24 +183,4 @@
 }
 .slate1 {
   border-radius: 50px;
-}
-.benifites {
-  margin-top: 50px;
-}
-.benifites-txt {
-  background-color: rgba(255, 255, 255, 0.114);
-  backdrop-filter: blur(25px);
-  padding: 50px;
-  line-height: 2.5;
-  text-align: justify;
-  border-radius: 50px;
-  font-size: 18.5px;
-  color: white;
-}
-
-.benifites1 {
-  height: 400px;
-  width: 90%;
-  margin-top: 35px;
-  margin-left: 50px;
 }
