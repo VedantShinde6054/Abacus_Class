@@ -27,7 +27,7 @@ a {
 }
 #section-wrapper {
   width: 100%;
-  padding: 100px;
+  padding: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +35,9 @@ a {
 .box-wrapper {
   position: relative;
   display: table;
-  width: 1100px;
+  width: 85%;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 70px;
   border-radius: 30px;
 }
 .info-wrap {

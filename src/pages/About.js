@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/About.css";
 import bgimg from "../assets/images/back-4.jpg";
+import Footer from "../components/footer";
 
 function About() {
   return (
@@ -201,6 +202,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 }
