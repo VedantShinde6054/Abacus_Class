@@ -2,11 +2,13 @@ import React, { Fragment } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/Contact.css";
 import bgimg from "../assets/images/back-4.jpg";
+import Footer from "../components/footer";
 
 function Contact() {
   return (
     <Fragment>
       <Menu />
+
       <div
         className="main-container"
         style={{ backgroundImage: `url(${bgimg})` }}
@@ -99,6 +101,7 @@ function Contact() {
           </div>
         </section>
       </div>
+      <Footer />
     </Fragment>
   );
 }

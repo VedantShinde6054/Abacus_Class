@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/Register.css";
 import bgimg from "../assets/images/back-4.jpg";
+import Footer from "../components/footer";
 
 function StudentRegister() {
   return (
@@ -46,17 +47,18 @@ function StudentRegister() {
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
                 checked
-              />&emsp;
+              />
+              &emsp;
               <span class="reg-title" for="flexRadioDefault2">
                 Male
               </span>
-
               <input
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
-              />&emsp;
+              />
+              &emsp;
               <span class="reg-title" for="flexRadioDefault2">
                 Female
               </span>
@@ -116,6 +118,7 @@ function StudentRegister() {
           </form>
         </main>
       </div>
+      <Footer />
     </Fragment>
   );
 }

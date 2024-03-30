@@ -101,16 +101,16 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 500px;
+  height: 660px;
 }
 .w-100 {
   width: 100% !important;
-  height: 500px;
+  height: 660px;
   border: 2px solid rgba(255, 255, 255, 0.571);
   border-radius: 25px;
 }
 .carousel-item {
-  height: 500px;
+  height: 660px;
 }
 .abacus1 {
   font-size: 40px;
@@ -186,6 +186,7 @@
 } */
 .benifites {
   margin-top: 50px;
+  padding-bottom: 60px;
 }
 .benifites-txt {
   background-color: rgba(255, 255, 255, 0.114);
