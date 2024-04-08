@@ -196,17 +196,29 @@ function Index() {
             <div class="row">
               <div class="col">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/teacher.png"
+                    altimg="Features of classes"
+                    ctext="Abacus Calculations up to 5 digit numbers."
+                  />
                 </center>
               </div>
               <div class="col">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/mentorship.png"
+                    altimg="Features of classes"
+                    ctext="Mentorship support for students."
+                  />
                 </center>
               </div>
               <div class="col">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/exam.png"
+                    altimg="Features of classes"
+                    ctext="Semi-Olympiyad Exam pratice."
+                  />
                 </center>
               </div>
             </div>
@@ -214,17 +226,29 @@ function Index() {
             <div class="row">
               <div class="col ">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/test.png"
+                    altimg="Features of classes"
+                    ctext="Test series for students and Teachers."
+                  />
                 </center>
               </div>
               <div class="col ">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/teacher.png"
+                    altimg="Features of classes"
+                    ctext="Best Faculty for Teaching and Mentoring."
+                  />
                 </center>
               </div>
               <div class="col">
                 <center>
-                  <Cards1 />
+                  <Cards1
+                    imgSrc="../assets/images/teacher.png"
+                    altimg="Features of classes"
+                    ctext="Doubt solving session on every Sunday."
+                  />
                 </center>
               </div>
             </div>
