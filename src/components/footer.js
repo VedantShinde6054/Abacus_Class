@@ -7,7 +7,7 @@ function Footer() {
       <footer className="footer-distributed">
         <div className="footer-left">
           <h3>
-            Company<span>logo</span>
+            Acharya <span>Abacus</span> Classes
           </h3>
 
           <p className="footer-links">
@@ -35,7 +35,7 @@ function Footer() {
           <div>
             <i className="fa fa-map-marker"></i>
             <p>
-              <span>444 S. Cedros Ave</span> Solana Beach, California
+              <span>Prefix Tower</span> Guldagad Estate, Rahuri
             </p>
           </div>
 

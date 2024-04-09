@@ -3,7 +3,7 @@ import Menu from "../components/Menu";
 import "../assets/css/About.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
-
+// import "../assets/images/ISO_Certificate.jpg";
 function About() {
   return (
     <Fragment>
@@ -15,7 +15,12 @@ function About() {
           <h1>About Us</h1>
         </header>
         <div className="certified">
-          An ISO Certified Classes- Learn Abacus and Vedic Math with Experts
+          An
+          <a href="../assets/images/ISO_certificate.jpg" className="iso">
+            {" "}
+            ISO{" "}
+          </a>
+          Certified Classes- Learn Abacus and Vedic Math with Experts
         </div>
         <main className="mainA">
           <section id="mission">
@@ -183,7 +188,7 @@ function About() {
 
               <ul class="social-links">
                 <li>
-                  <a href="#">
+                  <a href="www.youtube.com/@user-ji2hp2re7y">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </li>

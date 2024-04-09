@@ -1,7 +1,14 @@
 .card {
-  width: 20rem;
+  width: 17rem;
   margin: 30px 0;
+  box-shadow: 5px 10px 15px #99c;
+  background-color: rgb(255 255 255 / 82%);
 }
 .card-body {
-  width: 20rem;
+  width: 17rem;
+}
+.card-img-top {
+  height: 200px;
+  width: 250px;
+  margin: 11px;
 }
