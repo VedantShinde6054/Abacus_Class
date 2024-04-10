@@ -7,10 +7,11 @@ import Footer from "../components/footer";
 function About() {
   return (
     <Fragment>
+      <Menu />
       <div className="bodyA" style={{ backgroundImage: `url(${bgimg})` }}>
-        <div className="navA">
+        {/* <div className="navA">
           <Menu />
-        </div>
+        </div> */}
         <header className="header1">
           <h1>About Us</h1>
         </header>
