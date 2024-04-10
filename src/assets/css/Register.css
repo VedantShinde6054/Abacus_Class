@@ -128,7 +128,7 @@ input[type="password"]:focus + label {
   font-weight: bold; /* Make font bolder */
   transition: 0.5s;
 }
-.buttonL:hover {
+.buttonR:hover {
   background: #31279d;
 }
 
