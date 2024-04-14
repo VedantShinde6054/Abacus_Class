@@ -5,7 +5,7 @@ export const Cards = ({ imgSrc, altimg, ctext }) => {
     <Fragment>
       <div class="card">
         <img
-          src={require("../assets/images/mentorship.png")}
+          src={imgSrc}
           // src={imgSrc}
           class="card-img-top"
           alt={altimg}
