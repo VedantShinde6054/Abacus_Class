@@ -50,7 +50,8 @@ function Login() {
             </div>
             <button className="buttonL">Login</button>
             <div className="new_account">
-              Don't have account ? <a href="#">Register</a>
+              Don't have account ?{" "}
+              <a href="http://localhost:3000/StudentRegister">Register</a>
             </div>
           </form>
         </main>

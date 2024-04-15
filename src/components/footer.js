@@ -12,19 +12,21 @@ function Footer() {
 
           <p className="footer-links">
             <li>
-              <a href="#" className="link-1">
+              <a href="http://localhost:3000/" className="link-1">
                 Home
               </a>
 
-              <a href="#">Admision</a>
+              <a href="http://localhost:3000/StudentRegister">Admision</a>
 
-              <a href="#">TeacherTraining</a>
+              <a href="http://localhost:3000/TeacherTraining">
+                TeacherTraining
+              </a>
 
-              <a href="#">About</a>
+              <a href="http://localhost:3000/About">About</a>
 
               {/* <a href="#">Faq</a> */}
 
-              <a href="#">Contact Us</a>
+              <a href="http://localhost:3000/Contact">Contact Us</a>
             </li>
           </p>
 

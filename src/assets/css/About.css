@@ -32,6 +32,10 @@ h1 {
   text-transform: uppercase;
   text-shadow: 2px 2px 4px#00513b;
 }
+#about-info {
+  text-shadow: 2px 2px 1px black;
+}
+
 .content {
   height: 320px;
   display: inline-grid;

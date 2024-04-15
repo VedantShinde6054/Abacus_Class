@@ -3,6 +3,7 @@ import "../assets/css/Teacher.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Menu from "../components/Menu";
 import Footer from "../components/footer";
+import Floatingbutton from "../components/Floatingbutton";
 // import methodology1 from "../assets/images/teacher.png";
 
 function TeacherTraining() {
@@ -161,6 +162,7 @@ function TeacherTraining() {
           </section>
         </div>
       </section>
+      <Floatingbutton />
       <Footer />
     </Fragment>
   );

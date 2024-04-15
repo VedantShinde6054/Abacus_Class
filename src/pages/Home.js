@@ -4,6 +4,7 @@ import bgimg from "../assets/images/back-4.jpg";
 import Menu from "../components/Menu";
 import Footer from "../components/footer";
 import Cards1 from "../components/cards";
+import Floatingbutton from "../components/Floatingbutton";
 import feature1 from "../assets/images/calculations.png";
 import feature2 from "../assets/images/mentorship.png";
 import feature3 from "../assets/images/exam.png";
@@ -260,6 +261,8 @@ function Index() {
             </div>
           </div>
         </div>
+
+        <Floatingbutton />
 
         <Footer />
       </section>
