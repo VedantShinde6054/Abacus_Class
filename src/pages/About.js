@@ -124,9 +124,12 @@ function About() {
           </div>
           <div class="sub-containerA">
             <div class="teamsA">
-              <img src="download.jpeg" alt="" />
-              <div class="nameA">Esmay Stace</div>
-              <div class="desigA">Developer</div>
+              <img
+                src={require("../assets/images/Archana-Bankar.jpg")}
+                alt=""
+              />
+              <div class="nameA">Archana Bankar</div>
+              <div class="desigA">Head</div>
               <div class="aboutA">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 labore quam reprehenderit vitae aliquam dicta!
@@ -152,37 +155,37 @@ function About() {
             </div>
 
             <div class="teamsA">
-              <img src="rahul.jpg" alt="" />
-              <div class="nameA">Cloe Cisneros</div>
-              <div class="desigA">Designer</div>
-              <div class="aboutA">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                labore quam reprehenderit vitae aliquam dicta!
-              </div>
-
-              <ul class="social-links">
-                <li>
-                  <a href="#">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="teamsA">
-              <img src="labad.jpg" alt="" />
-              <div class="nameA">Sanjay Mullen</div>
+              <img src={require("../assets/images/Sachin-Bankar.jpg")} alt="" />
+              <div class="nameA">Sachin Bankar</div>
               <div class="desigA">Manager</div>
+              <div class="aboutA">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                labore quam reprehenderit vitae aliquam dicta!
+              </div>
+
+              <ul class="social-links">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="teamsA">
+              <img src={require("../assets/images/teacher.png")} alt="" />
+              <div class="nameA">Nitin More</div>
+              <div class="desigA">Advisor</div>
               <div class="aboutA">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 labore quam reprehenderit vitae aliquam dicta!
@@ -210,7 +213,9 @@ function About() {
         </div>
       </div>
       <Floatingbutton />
-      <Footer />
+      <div id="footer-about">
+        <Footer />
+      </div>
     </Fragment>
   );
 }
