@@ -3,6 +3,7 @@ import Menu from "../components/Menu";
 import "../assets/css/Contact.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
+import Floatingbutton from "../components/Floatingbutton";
 
 function Contact() {
   return (
@@ -25,12 +26,12 @@ function Contact() {
                 <li>
                   <i className="fas fa-phone-alt"></i>
                   <span>Phone:</span>
-                  <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                  <a href="tel:+91 7709774300">+91 7709774300</a>
                 </li>
                 <li>
                   <i className="fas fa-paper-plane"></i>
                   <span>Email:</span>
-                  <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                  <a href="mailto:Ceoprefix@gamil.com">Ceoprefix@gamil.com</a>
                 </li>
                 <li>
                   <i className="fas fa-globe"></i>
@@ -101,6 +102,7 @@ function Contact() {
           </div>
         </section>
       </div>
+      <Floatingbutton />
       <Footer />
     </Fragment>
   );

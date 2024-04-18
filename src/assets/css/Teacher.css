@@ -2,8 +2,7 @@
   padding: 50px 0;
 }
 .teacher-container {
-  width: 1400px;
-  /* width: 100%; */
+  width: 85%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -36,19 +35,19 @@
   justify-content: center;
   margin-right: -15px;
   margin-left: -15px;
-  margin-top: 55px;
+  margin: 55px 0;
 }
 .teacher-pro1 {
   text-align: center;
   width: 100%;
   margin: auto;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.9rem;
 }
-#P-method {
-  color: chartreuse;
+/* #P-method {
+  color: white;
   font-weight: 600;
-  font-size: 45px;
-}
+  font-size: 50px;
+} */
 .teacher-pro2,
 .teacher-pro3,
 .teacher-pro4,
@@ -59,24 +58,79 @@
   margin: 10px 30px;
 }
 .tbox-1 {
-  background-color: #fff3cd;
+  background-color: rgba(128, 255, 0, 0.816);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 35px;
-  min-height: 350px;
+  /* min-height: 350px; */
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
   box-shadow: 0px 5px 20px 0px rgb(242 238 249 / 10%);
   padding: 25px 15px 25px 15px;
   text-align: center;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  transition: transform 0.3s ease-in-out;
 }
+.tbox-1:hover {
+  transform: translate3d(-10px, -10px, -10px);
+}
+
 .Ti {
   margin: 15px 0;
 }
 .pi {
   margin: 15px 5px;
+  color: black;
+  font-weight: 600;
+}
+.methodologyimg {
+  height: 200px;
+  width: 200px;
+}
+
+.teacher-fea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.teacher-col1 {
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+.teacher-col2 {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.featureT {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+}
+.pro-fea {
+  text-align: center;
+  max-width: 85%;
+  margin: 20px 30px;
+}
+.f1 {
+  background-color: #e3e7ece0;
+}
+.teacher-fea-img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+#fea-img {
+  text-align: center;
+  width: 85%;
+  height: 40vw;
+  margin: 30px;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+#fea-img:hover {
+  transform: scale(1.1);
 }

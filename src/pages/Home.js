@@ -4,6 +4,13 @@ import bgimg from "../assets/images/back-4.jpg";
 import Menu from "../components/Menu";
 import Footer from "../components/footer";
 import Cards1 from "../components/cards";
+import Floatingbutton from "../components/Floatingbutton";
+import feature1 from "../assets/images/calculations.png";
+import feature2 from "../assets/images/mentorship.png";
+import feature3 from "../assets/images/exam.png";
+import feature4 from "../assets/images/test.png";
+import feature5 from "../assets/images/teacher.png";
+import feature6 from "../assets/images/query.png";
 
 function Index() {
   return (
@@ -197,7 +204,7 @@ function Index() {
               <div class="col">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/teacher.png"
+                    imgSrc={feature1}
                     altimg="Features of classes"
                     ctext="Abacus Calculations up to 5 digit numbers."
                   />
@@ -206,7 +213,7 @@ function Index() {
               <div class="col">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/mentorship.png"
+                    imgSrc={feature2}
                     altimg="Features of classes"
                     ctext="Mentorship support for students."
                   />
@@ -215,7 +222,7 @@ function Index() {
               <div class="col">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/exam.png"
+                    imgSrc={feature3}
                     altimg="Features of classes"
                     ctext="Semi-Olympiyad Exam pratice."
                   />
@@ -227,7 +234,7 @@ function Index() {
               <div class="col ">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/test.png"
+                    imgSrc={feature4}
                     altimg="Features of classes"
                     ctext="Test series for students and Teachers."
                   />
@@ -236,7 +243,7 @@ function Index() {
               <div class="col ">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/teacher.png"
+                    imgSrc={feature5}
                     altimg="Features of classes"
                     ctext="Best Faculty for Teaching and Mentoring."
                   />
@@ -245,7 +252,7 @@ function Index() {
               <div class="col">
                 <center>
                   <Cards1
-                    imgSrc="../assets/images/teacher.png"
+                    imgSrc={feature6}
                     altimg="Features of classes"
                     ctext="Doubt solving session on every Sunday."
                   />
@@ -254,6 +261,8 @@ function Index() {
             </div>
           </div>
         </div>
+
+        <Floatingbutton />
 
         <Footer />
       </section>

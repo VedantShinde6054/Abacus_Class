@@ -3,7 +3,9 @@ import "../assets/css/Teacher.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Menu from "../components/Menu";
 import Footer from "../components/footer";
-// import "../assets/images/teacher.png";
+import Floatingbutton from "../components/Floatingbutton";
+// import methodology1 from "../assets/images/teacher.png";
+
 function TeacherTraining() {
   return (
     <Fragment>
@@ -35,12 +37,14 @@ function TeacherTraining() {
               </div>
               <div className="teacher-program">
                 <div className="teacher-pro1">
-                  <h2 id="P-method">Program Methodology</h2>
+                  <h1>Program Methodology</h1>
                 </div>
                 <div className="teacher-pro2">
-                  <div className="tbox-1 c1">
+                  <div className="tbox-1 ">
                     <img
-                      imgSrc="../assets/images/teacher.png"
+                      className="methodologyimg"
+                      // src={methodology1}
+                      src={require("../assets/images/teacher.png")}
                       alt="Images of methodology"
                     />
                     <h2 className="Ti">Learn</h2>
@@ -51,9 +55,10 @@ function TeacherTraining() {
                   </div>
                 </div>
                 <div className="teacher-pro3">
-                  <div className="tbox-1 c1">
+                  <div className="tbox-1 ">
                     <img
-                      src="..assets/image/mentorship.png"
+                      className="methodologyimg"
+                      src={require("../assets/images/test.png")}
                       alt="Images of methodology"
                     />
                     <h2 className="Ti">Test</h2>
@@ -64,9 +69,10 @@ function TeacherTraining() {
                   </div>
                 </div>
                 <div className="teacher-pro4">
-                  <div className="tbox-1 c1">
+                  <div className="tbox-1 ">
                     <img
-                      src="..assets/image/mentorship.png"
+                      className="methodologyimg"
+                      src={require("../assets/images/observation.png")}
                       alt="Images of methodology"
                     />
                     <h2 className="Ti">Observe</h2>
@@ -77,9 +83,10 @@ function TeacherTraining() {
                   </div>
                 </div>
                 <div className="teacher-pro5">
-                  <div className="tbox-1 c1">
+                  <div className="tbox-1">
                     <img
-                      src="..assets/image/mentorship.png"
+                      className="methodologyimg"
+                      src={require("../assets/images/query.png")}
                       alt="Images of methodology"
                     />
                     <h2 className="Ti">Practice</h2>
@@ -90,10 +97,72 @@ function TeacherTraining() {
                   </div>
                 </div>
               </div>
+              <div className="teacher-fea">
+                <div className="teacher-pro1">
+                  <h1>Features </h1>
+                </div>
+                <div className="teacher-col1">
+                  <div className="teacher-fea ">
+                    <div className="featureT">
+                      <div className="pro-fea">
+                        <div className="tbox-1 f1">
+                          <h2 className="Ti">Learn from experts</h2>
+                          <p className="pi">
+                            Achieve your career goals with subject experts and
+                            advanced learning methodologies.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="featureT">
+                      <div className="pro-fea">
+                        <div className="tbox-1 f1">
+                          <h2 className="Ti">Access to Course</h2>
+                          <p className="pi">
+                            Teachers will get one year access to abacus Course.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="featureT">
+                      <div className="pro-fea">
+                        <div className="tbox-1 f1">
+                          <h2 className="Ti">Certification</h2>
+                          <p className="pi">
+                            You’ll be able to accelerate your professional
+                            growth easily as never before.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="featureT">
+                      <div className="pro-fea">
+                        <div className="tbox-1 f1">
+                          <h2 className="Ti">Flexible timing</h2>
+                          <p className="pi">
+                            As the course is designed as one to one training,
+                            timing can be adjusted according to convenience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="teacher-col2">
+                  <div className="teacher-fea-img">
+                    <img
+                      id="fea-img"
+                      src={require("../assets/images/template1.jpg")}
+                      alt="teacher training pomplate"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>
       </section>
+      <Floatingbutton />
       <Footer />
     </Fragment>
   );

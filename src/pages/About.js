@@ -3,6 +3,7 @@ import Menu from "../components/Menu";
 import "../assets/css/About.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
+import Floatingbutton from "../components/Floatingbutton";
 // import "../assets/images/ISO_Certificate.jpg";
 function About() {
   return (
@@ -79,7 +80,7 @@ function About() {
         <section className="InfoA">
           <div className="InfoA1">
             <section className="sec-info">
-              <div>
+              <div id="about-info">
                 <h3>Information that you need to KNOW </h3>
               </div>
               <br />
@@ -208,6 +209,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Floatingbutton />
       <Footer />
     </Fragment>
   );
