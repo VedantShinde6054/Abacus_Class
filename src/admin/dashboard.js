@@ -31,14 +31,6 @@ function Dashboard() {
             <img src="payment.png" alt="" />
             &nbsp;<span>Content Manager</span>{" "}
           </li>
-          <li>
-            <img src="help-web-button.png" alt="" />
-            &nbsp; <span>Help</span>
-          </li>
-          <li>
-            <img src="settings.png" alt="" />
-            &nbsp;<span>Settings</span>{" "}
-          </li>
         </ul>
       </div>
       <div class="container-dashboard">
