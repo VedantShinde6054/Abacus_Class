@@ -178,7 +178,7 @@ function Index() {
               </div>
             </div>
 
-            <div class="row benifites">
+            {/* <div class="row benifites">
               <div class="col benifites-txt ">
                 <h4>Benifites of Abacus :-</h4>
                 <li>The process improves the listening ability</li>
@@ -196,7 +196,7 @@ function Index() {
                   alt=".."
                 />
               </div>
-            </div>
+            </div> */}
             <div class="row">
               <h1>What we Offer</h1>
             </div>
