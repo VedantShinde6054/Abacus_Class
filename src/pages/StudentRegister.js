@@ -1,10 +1,35 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/Register.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
+import { db } from "../Firebase-config";
+import { collection, addDoc } from "firebase/firestore";
+import { async } from "@firebase/util";
 
 function StudentRegister() {
+  const collRef = collection(db, "users");
+  const [user_name, setName] = useState("");
+  const [user_email, setEmail] = useState("");
+  const [user_gender, setGender] = useState("");
+  const [user_dob, setDob] = useState("");
+  const [user_phone, setPhone] = useState(0);
+
+  const createUser = async () => {
+    try {
+      await addDoc(collRef, {
+        name: user_name,
+        email: user_email,
+        gender: user_gender,
+        dob: user_dob,
+        phone: user_phone,
+      });
+      console.log("User added sucessfully");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <Fragment>
       <div
@@ -31,12 +56,22 @@ function StudentRegister() {
                 type="text"
                 placeholder="Enter Your Fullname "
                 required
+                onChange={(event) => {
+                  setName(event.target.value);
+                }}
               />
             </div>
 
             <div className="form_wrapperR">
               <span className="reg-title">Student DOB :</span>
-              <input id="dateR" type="date" required />
+              <input
+                id="dateR"
+                type="date"
+                required
+                onChange={(event) => {
+                  setDob(event.target.value);
+                }}
+              />
             </div>
 
             <div className="form_wrapperR">
@@ -45,8 +80,10 @@ function StudentRegister() {
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
+                value="Male"
+                onChange={(event) => {
+                  setGender(event.target.value);
+                }}
               />
               &emsp;
               <span class="reg-title" for="flexRadioDefault2">
@@ -56,7 +93,10 @@ function StudentRegister() {
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault2"
+                value="Female"
+                onChange={(event) => {
+                  setGender(event.target.value);
+                }}
               />
               &emsp;
               <span class="reg-title" for="flexRadioDefault2">
@@ -71,6 +111,9 @@ function StudentRegister() {
                 type="email"
                 placeholder="Enter Valid Email"
                 required
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
               />
             </div>
 
@@ -83,19 +126,22 @@ function StudentRegister() {
                 pattern="[0-9]{10}"
                 id="phoneR"
                 required
+                onChange={(event) => {
+                  setPhone(event.target.value);
+                }}
               />
             </div>
 
-            <div className="form_wrapperR">
+            {/* <div className="form_wrapperR">
               <span className="reg-title">Student Username :</span>
               <input
-                id="inputR"
+                id="nameR"
                 type="text"
                 required
                 placeholder="Set Username"
               />
               <i className="material-icons">person</i>
-            </div>
+            </div> */}
 
             <div className="form_wrapperR">
               <span className="reg-title">Student Password :</span>
@@ -105,7 +151,7 @@ function StudentRegister() {
                 required
                 placeholder="Set Password"
               />
-              <i className="material-icons">lock</i>
+              {/* <i className="material-icons">lock</i> */}
             </div>
             <div className="remember_box">
               <div className="remember">
@@ -113,7 +159,9 @@ function StudentRegister() {
               </div>
             </div>
             <center>
-              <button className="buttonR">Register</button>
+              <button className="buttonR" onClick={createUser}>
+                Register
+              </button>
             </center>
           </form>
         </main>
