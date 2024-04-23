@@ -66,14 +66,14 @@ function Index() {
 
                   <div className="carousel-item">
                     <img
-                      src={require("../assets/images/img-2.jpg")}
+                      src={require("../assets/images/template2.jpg")}
                       // className="d-block w-100"
                       className="d-block w-100 object-fit-xl-fill border rounded corr-img1"
                       alt="..."
                     />
                     <div className="black-effect"></div>
                     <img
-                      src={require("../assets/images/img-2.jpg")}
+                      src={require("../assets/images/template2.jpg")}
                       // className="d-block w-100"
                       className="d-block w-100 object-fit-xl-contain border rounded corr-img2"
                       alt="..."
@@ -82,14 +82,14 @@ function Index() {
 
                   <div className="carousel-item">
                     <img
-                      src={require("../assets/images/img-3.jpg")}
+                      src={require("../assets/images/ISO_Certificate.jpg")}
                       // className="d-block w-100"
                       className="d-block w-100 object-fit-xl-fill border rounded corr-img1"
                       alt="..."
                     />
                     <div className="black-effect"></div>
                     <img
-                      src={require("../assets/images/img-3.jpg")}
+                      src={require("../assets/images/ISO_Certificate.jpg")}
                       // className="d-block w-100"
                       className="d-block w-100 object-fit-xl-contain border rounded corr-img2"
                       alt="..."
@@ -123,7 +123,7 @@ function Index() {
               </div>
             </div>
           </div>
-          <div class="container-xxl text-center container-content">
+          <div class=" text-center container-content">
             <div class="row">
               <h1>About Abacus</h1>
             </div>
