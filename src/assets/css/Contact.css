@@ -19,12 +19,7 @@
   right: 0;
   left: 0;
 } */
-body,
-input,
-textarea,
-a {
-  /* font-family: "Roboto", sans-serif; */
-}
+
 #section-wrapper {
   width: 100%;
   padding: 70px;

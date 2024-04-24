@@ -37,7 +37,7 @@ h1 {
 }
 
 .content {
-  height: 320px;
+  height: 400px;
   display: inline-grid;
 }
 .iso {
@@ -65,7 +65,7 @@ h1 {
   flex: 1 1;
   padding: 40px;
   padding-top: 25px;
-  height: 430px;
+  height: 550px;
   background-color: rgb(255 255 255 / 82%);
   border-radius: 20px;
   border: 3px solid blue;
@@ -152,7 +152,7 @@ p {
 }
 
 .sub-containerA {
-  max-width: 1200px;
+  max-width: 85%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +160,7 @@ p {
 }
 
 .teamsA {
-  margin: 10px;
+  margin: 20px;
   padding: 22px;
   max-width: 30%;
   cursor: pointer;

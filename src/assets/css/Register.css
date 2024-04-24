@@ -6,16 +6,27 @@
 }
 
 .backgroundR {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-repeat: repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh; */
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
-
+.register-main {
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .reg-main {
   width: 800px;
   padding: 30px;
@@ -29,8 +40,7 @@
   ); /* Semi-transparent white, matching the contact us page */
   backdrop-filter: blur(25px);
   position: relative;
-  margin-top: 10%;
-  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 .headerR {
