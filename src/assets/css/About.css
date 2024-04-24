@@ -168,7 +168,7 @@ p {
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  border: 3px solid blue;
+  border: 2px solid rgba(64, 255, 0, 0.535);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

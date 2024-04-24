@@ -3,30 +3,50 @@ import Menu from "../components/Menu";
 import "../assets/css/Register.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
-import { db } from "../Firebase-config";
-import { collection, addDoc } from "firebase/firestore";
-import { async } from "@firebase/util";
+import { auth, db } from "../Firebase-config";
+// import { collection, addDoc } from "firebase/firestore";
+// import { async } from "@firebase/util";
+import { setDoc, doc } from "firebase/firestore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function StudentRegister() {
-  const collRef = collection(db, "users");
-  const [user_name, setName] = useState("");
-  const [user_email, setEmail] = useState("");
-  const [user_gender, setGender] = useState("");
-  const [user_dob, setDob] = useState("");
-  const [user_phone, setPhone] = useState(0);
+  // const collRef = collection(db, "users");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
+  const [gender, setGender] = useState("");
+  const [dob, setDob] = useState("");
+  const [phone, setPhone] = useState(0);
 
-  const createUser = async () => {
+  const handleRegister = async (e) => {
+    e.preventDefault();
     try {
-      await addDoc(collRef, {
-        name: user_name,
-        email: user_email,
-        gender: user_gender,
-        dob: user_dob,
-        phone: user_phone,
+      await createUserWithEmailAndPassword(auth, email, password);
+      const user = auth.currentUser;
+      console.log(user);
+      if (user) {
+        await setDoc(doc(db, "Users", user.uid), {
+          email: user.email,
+          name: name,
+          gender: gender,
+          dob: dob,
+          phone: phone,
+        });
+      }
+      console.log("User Registered Successfully!!");
+      toast.success("User Registered Successfully!!", {
+        position: "top-center",
       });
-      console.log("User added sucessfully");
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 6000);
     } catch (error) {
-      console.log(error);
+      console.log(error.message);
+      toast.error(error.message, {
+        position: "bottom-center",
+      });
     }
   };
 
@@ -48,7 +68,7 @@ function StudentRegister() {
             </center>
           </header>
 
-          <form className="formR">
+          <form className="formR" onSubmit={handleRegister}>
             <div className="form_wrapperR">
               <span className="reg-title">Student Name :</span>
               <input
@@ -81,6 +101,7 @@ function StudentRegister() {
                 type="radio"
                 name="flexRadioDefault"
                 value="Male"
+                required
                 onChange={(event) => {
                   setGender(event.target.value);
                 }}
@@ -105,19 +126,6 @@ function StudentRegister() {
             </div>
 
             <div className="form_wrapperR">
-              <span className="reg-title">Student Email :</span>
-              <input
-                id="emailR"
-                type="email"
-                placeholder="Enter Valid Email"
-                required
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                }}
-              />
-            </div>
-
-            <div className="form_wrapperR">
               <span className="reg-title">Student Contact :</span>
               <input
                 type="tel"
@@ -132,16 +140,18 @@ function StudentRegister() {
               />
             </div>
 
-            {/* <div className="form_wrapperR">
-              <span className="reg-title">Student Username :</span>
+            <div className="form_wrapperR">
+              <span className="reg-title">Student Email :</span>
               <input
-                id="nameR"
-                type="text"
+                id="emailR"
+                type="email"
+                placeholder="Enter Valid Email"
                 required
-                placeholder="Set Username"
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
               />
-              <i className="material-icons">person</i>
-            </div> */}
+            </div>
 
             <div className="form_wrapperR">
               <span className="reg-title">Student Password :</span>
@@ -150,8 +160,10 @@ function StudentRegister() {
                 type="password"
                 required
                 placeholder="Set Password"
+                onChange={(event) => {
+                  setPass(event.target.value);
+                }}
               />
-              {/* <i className="material-icons">lock</i> */}
             </div>
             <div className="remember_box">
               <div className="remember">
@@ -159,7 +171,7 @@ function StudentRegister() {
               </div>
             </div>
             <center>
-              <button className="buttonR" onClick={createUser}>
+              <button type="submit" className="buttonR">
                 Register
               </button>
             </center>
@@ -167,6 +179,7 @@ function StudentRegister() {
         </main>
       </div>
       <Footer />
+      <ToastContainer />
     </Fragment>
   );
 }
