@@ -111,7 +111,7 @@ function Index() {
                   subtraction, multiplication, and division, as well as decimal
                   calculations and handling negative numbers.
                 </div>
-                <div class="col ab-info-img">
+                <div class="col ab-info-img align-items-center justify-content-center">
                   <img
                     src={require("../assets/images/abacus.png")}
                     className="advan1"
@@ -121,7 +121,7 @@ function Index() {
               </div>
 
               <div class="row ab-info">
-                <div class="col ab-info-img">
+                <div class="col ab-info-img align-items-center justify-content-center">
                   <img
                     src={require("../assets/images/maths.png")}
                     className="mental1"
@@ -210,6 +210,149 @@ function Index() {
                       ctext="Doubt solving session on every Sunday."
                     />
                   </center>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <h1>Let Us Introduce Ourself</h1>
+            </div>
+            <div className="bg-space">
+              <div class="row ab-info">
+                <div class="col ab-info-txt ">
+                  <h4>
+                    {" "}
+                    <span id="span1">
+                      <strong>Acharya Abacus Classes</strong>
+                    </span>{" "}
+                  </h4>
+                  is aware that every child is different and has the capacity to
+                  learn. We created the curriculum with the student in mind.
+                  Acharya Classes understands the unique learning needs of every
+                  child and designed our curriculum accordingly. To tackle the
+                  challenge parents face in finding abacus and Vedic math
+                  classes, we introduced an online course. Our sessions cater to
+                  both young kids and adults, ensuring everyone can benefit from
+                  well-organized lessons. Continuously updating our curriculum
+                  and employing advanced teaching methods, we strive to be
+                  India's leading eLearning platform for abacus and Vedic Maths.
+                </div>
+                <div class="col ab-info-img">
+                  <img
+                    src={require("../assets/images/school-material.png")}
+                    className="advan1"
+                    alt="..."
+                  />
+                  <br />
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      window.location.href = "/StudentRegister";
+                    }}
+                  >
+                    Enroll Now
+                    <img
+                      src={require("../assets/images/contract.png")}
+                      style={{ width: "35px", marginLeft: "10px" }}
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row ">
+              <h1>Our Team</h1>
+            </div>
+
+            <div className="bg-space">
+              <div class="row ab-info  align-items-center justify-content-center">
+                <div class="teamsA col">
+                  <img
+                    src={require("../assets/images/Archana-Bankar.jpg")}
+                    alt=""
+                  />
+                  <div class="nameA">Archana Bankar</div>
+                  <div class="desigA">Head</div>
+                  <div class="aboutA">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum labore quam reprehenderit vitae aliquam dicta!
+                  </div>
+
+                  <ul class="social-links">
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="teamsA">
+                  <img
+                    src={require("../assets/images/Sachin-Bankar.jpg")}
+                    alt=""
+                  />
+                  <div class="nameA">Sachin Bankar</div>
+                  <div class="desigA">Manager</div>
+                  <div class="aboutA">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum labore quam reprehenderit vitae aliquam dicta!
+                  </div>
+
+                  <ul class="social-links">
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="teamsA">
+                  <img src={require("../assets/images/teacher.png")} alt="" />
+                  <div class="nameA">Nitin More</div>
+                  <div class="desigA">Advisor</div>
+                  <div class="aboutA">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum labore quam reprehenderit vitae aliquam dicta!
+                  </div>
+
+                  <ul class="social-links">
+                    <li>
+                      <a href="www.youtube.com/@user-ji2hp2re7y">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
