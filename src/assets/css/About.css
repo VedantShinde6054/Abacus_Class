@@ -129,7 +129,7 @@ h1 {
 .headingA {
   font-size: 36px;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   margin-bottom: 15px;
   margin-left: 200px;
 }
