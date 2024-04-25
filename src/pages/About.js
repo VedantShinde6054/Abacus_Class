@@ -205,7 +205,7 @@ function About() {
 
               <ul class="social-links">
                 <li>
-                  <a href="www.youtube.com/@user-ji2hp2re7y">
+                  <a href="#">
                     <i class="fab fa-facebook"></i>
                   </a>
                 </li>

@@ -274,8 +274,9 @@ function Index() {
                   <div class="nameA">Archana Bankar</div>
                   <div class="desigA">Head</div>
                   <div class="aboutA">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum labore quam reprehenderit vitae aliquam dicta!
+                    Our Endeavour Is - To 'Simplify The Learning Methods' So
+                    That Every Student Can RISE. Our Philosophy Of Spreading
+                    Education is RISE - Research, Innovate, Share & Educate.
                   </div>
 
                   <ul class="social-links">
@@ -285,7 +286,10 @@ function Index() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.instagram.com/acharya_aabacus_classes?igsh=MXQyanozZTRxdjdmbQ"
+                        target="_blank"
+                      >
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
@@ -304,8 +308,9 @@ function Index() {
                   <div class="nameA">Sachin Bankar</div>
                   <div class="desigA">Manager</div>
                   <div class="aboutA">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum labore quam reprehenderit vitae aliquam dicta!
+                    Our Endeavour Is - To 'Simplify The Learning Methods' So
+                    That Every Student Can RISE. Our Philosophy Of Spreading
+                    Education is RISE - Research, Innovate, Share & Educate.
                   </div>
 
                   <ul class="social-links">
@@ -315,7 +320,10 @@ function Index() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.instagram.com/acharya_aabacus_classes?igsh=MXQyanozZTRxdjdmbQ"
+                        target="_blank"
+                      >
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
@@ -332,18 +340,22 @@ function Index() {
                   <div class="nameA">Nitin More</div>
                   <div class="desigA">Advisor</div>
                   <div class="aboutA">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum labore quam reprehenderit vitae aliquam dicta!
+                    Our Endeavour Is - To 'Simplify The Learning Methods' So
+                    That Every Student Can RISE. Our Philosophy Of Spreading
+                    Education is RISE - Research, Innovate, Share & Educate.
                   </div>
 
                   <ul class="social-links">
                     <li>
-                      <a href="www.youtube.com/@user-ji2hp2re7y">
+                      <a href="#">
                         <i class="fab fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.instagram.com/acharya_aabacus_classes?igsh=MXQyanozZTRxdjdmbQ"
+                        target="_blank"
+                      >
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
