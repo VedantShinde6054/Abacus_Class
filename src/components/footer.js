@@ -22,7 +22,7 @@ function Footer() {
                 TeacherTraining
               </a>
 
-              <a href="http://localhost:3000/About">About</a>
+              {/* <a href="http://localhost:3000/About">About</a> */}
 
               {/* <a href="#">Faq</a> */}
 
