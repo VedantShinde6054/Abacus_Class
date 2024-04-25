@@ -51,11 +51,11 @@ function Menu() {
                       Teacher training
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link className="nav-link mx-lg-2" to="/About">
                       About
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link mx-lg-2" to="/Contact">
                       Contact us
@@ -84,4 +84,5 @@ function Menu() {
     </Fragment>
   );
 }
+
 export default Menu;
