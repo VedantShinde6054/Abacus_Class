@@ -120,6 +120,8 @@ function TeacherTraining() {
                           <h2 className="Ti">Access to Course</h2>
                           <p className="pi">
                             Teachers will get one year access to abacus Course.
+                            And they will be able to access the code whenever
+                            they require.
                           </p>
                         </div>
                       </div>
@@ -129,8 +131,8 @@ function TeacherTraining() {
                         <div className="tbox-1 f1">
                           <h2 className="Ti">Certification</h2>
                           <p className="pi">
-                            You’ll be able to accelerate your professional
-                            growth easily as never before.
+                            With Certification You’ll be able to accelerate your
+                            professional growth easily as never before.
                           </p>
                         </div>
                       </div>
