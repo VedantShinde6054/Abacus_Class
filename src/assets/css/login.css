@@ -26,7 +26,7 @@
 } */
 .mainL {
   width: 450px;
-  height: 550px;
+  height: 500px;
   padding: 30px;
   border-radius: 30px;
   border: 3px solid #31279d; /* Dark blue, matching the contact us page */
@@ -54,7 +54,7 @@
 }
 
 .formL {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   gap: 20px;

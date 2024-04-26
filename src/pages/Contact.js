@@ -1,11 +1,62 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/Contact.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
 import Floatingbutton from "../components/Floatingbutton";
+import { auth, db } from "../Firebase-config";
+import { getDoc, setDoc, doc } from "firebase/firestore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
+  const [userDetails, setUserDetails] = useState(null);
+  const user = auth.currentUser;
+  const fetchUserData = async () => {
+    auth.onAuthStateChanged(async (user) => {
+      console.log(user);
+      if (user) {
+        const docRef = doc(db, "Users", user.uid);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setUserDetails(docSnap.data());
+          console.log(docSnap.data());
+        } else {
+          console.log("User is not logged in");
+        }
+      }
+    });
+  };
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  const [msg, setMsg] = useState("");
+  const handleQuery = async (e) => {
+    const user = auth.currentUser;
+    e.preventDefault();
+    try {
+      console.log(user);
+      if (user) {
+        await setDoc(doc(db, "Query", user.uid), {
+          email: user.email,
+          name: userDetails.name,
+          phone: userDetails.phone,
+          msg: msg,
+        });
+      }
+      console.log("Your Response has been recorded !! ");
+      toast.success("Your Response has been recorded !! ", {
+        position: "top-center",
+      });
+    } catch (error) {
+      console.log(error.message);
+      toast.error("Some Error Ocurred !!", {
+        position: "bottom-center",
+      });
+    }
+  };
+
   return (
     <Fragment>
       <Menu />
@@ -65,53 +116,123 @@ function Contact() {
               </ul>
             </div>
             <div className="form-wrap">
-              <form action="#" method="POST">
-                <h2 className="form-title">Send us a message</h2>
-                <div className="form-fields">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="fname"
-                      placeholder="First Name"
-                    />
-                  </div>
-                  <div className="form-group">
+              {userDetails ? (
+                <form action="#" onSubmit={handleQuery}>
+                  <h2 className="form-title">Send us a message</h2>
+                  <div className="form-fields">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="fname"
+                        placeholder="First Name"
+                        readOnly
+                        required
+                        value={user ? userDetails.name : ""}
+                      />
+                    </div>
+                    {/* <div className="form-group">
                     <input
                       type="text"
                       className="lname"
                       placeholder="Last Name"
                     />
+                  </div> */}
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="email"
+                        placeholder="Mail"
+                        value={user ? userDetails.email : ""}
+                        readOnly
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="number"
+                        className="phone"
+                        placeholder="Phone"
+                        value={user ? userDetails.phone : ""}
+                        readOnly
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id=""
+                        placeholder="Write your message"
+                        required
+                        onChange={(event) => {
+                          setMsg(event.target.value);
+                        }}
+                      ></textarea>
+                    </div>
                   </div>
-                  <div className="form-group">
-                    <input type="email" className="email" placeholder="Mail" />
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    className="submit-button"
+                  />
+                </form>
+              ) : (
+                <form action="#">
+                  <h2 className="form-title">Send us a message</h2>
+                  <div className="form-fields">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="fname"
+                        placeholder="First Name"
+                        readOnly
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="email"
+                        placeholder="Mail"
+                        readOnly
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="number"
+                        className="phone"
+                        placeholder="Phone"
+                        readOnly
+                        required
+                      />
+                    </div>
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id=""
+                        placeholder="Write your message"
+                        required
+                        onChange={(event) => {
+                          setMsg(event.target.value);
+                        }}
+                      ></textarea>
+                    </div>
                   </div>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      className="phone"
-                      placeholder="Phone"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id=""
-                      placeholder="Write your message"
-                    ></textarea>
-                  </div>
-                </div>
-                <input
-                  type="submit"
-                  value="Send Message"
-                  className="submit-button"
-                />
-              </form>
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    className="submit-button"
+                  />
+                </form>
+              )}
             </div>
           </div>
         </section>
       </div>
       <Floatingbutton />
       <Footer />
+
+      <ToastContainer />
     </Fragment>
   );
 }

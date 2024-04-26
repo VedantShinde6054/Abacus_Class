@@ -33,6 +33,7 @@ function StudentRegister() {
           gender: gender,
           dob: dob,
           phone: phone,
+          status: false,
         });
       }
       console.log("User Registered Successfully!!");
@@ -41,7 +42,7 @@ function StudentRegister() {
       });
       setTimeout(function () {
         window.location.href = "/";
-      }, 6000);
+      }, 5000);
     } catch (error) {
       console.log(error.message);
       toast.error(error.message, {
@@ -164,11 +165,6 @@ function StudentRegister() {
                   setPass(event.target.value);
                 }}
               />
-            </div>
-            <div className="remember_box">
-              <div className="remember">
-                <input type="checkbox" />I agree to register for this course
-              </div>
             </div>
             <center>
               <button type="submit" className="buttonR">

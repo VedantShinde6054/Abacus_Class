@@ -1,7 +1,9 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Continuous from "./continuous";
+import { auth, db } from "../Firebase-config";
 function Menu() {
+  const user = auth.currentUser;
   return (
     <Fragment>
       <div>
@@ -64,9 +66,15 @@ function Menu() {
                 </ul>
               </div>
             </div>
-            <Link className="login-button" to="/Login">
-              Account
-            </Link>
+            {user ? (
+              <Link className="login-button" to="/Profile">
+                Account
+              </Link>
+            ) : (
+              <Link className="login-button" to="/Login">
+                Account
+              </Link>
+            )}
             <button
               className="navbar-toggler pe-0"
               type="button"
