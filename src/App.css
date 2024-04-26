@@ -33,3 +33,12 @@ body{
   transform: scale(1.1);
   box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .2);
 }
+
+.logout{
+  background-color: #df3535;
+}
+
+.btn:hover {
+  background-color:  #8a0202;
+  color: white;
+}

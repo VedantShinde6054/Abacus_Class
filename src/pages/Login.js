@@ -16,7 +16,9 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      // window.location.href = "/";
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 5000);
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -46,7 +48,7 @@ function Login() {
             </center>
           </header>
           <form className="formL" onSubmit={handleSubmit}>
-            <div className="form_wrapperL">
+            {/* <div className="form_wrapperL">
               <select class="form-select selectR">
                 <option selected disabled>
                   Login As
@@ -54,7 +56,7 @@ function Login() {
                 <option value="student">Student</option>
                 <option value="admin">Admin</option>
               </select>
-            </div>
+            </div> */}
             <div className="form_wrapperL">
               <input
                 id="inputL"
