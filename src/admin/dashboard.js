@@ -8,7 +8,7 @@ function Dashboard() {
       <Menu></Menu>
       <div class="side-menu">
         <div class="brand-name">
-          <h1>Brand</h1>
+          <h1>Acharya Abacus Classes</h1>
         </div>
         <ul>
           <li>
@@ -35,46 +35,34 @@ function Dashboard() {
       </div>
       <div class="container-dashboard">
         <div class="content">
-          <div class="cards">
-            <div class="card">
-              <div class="box">
+          <div class="dash-cards">
+            <div class="card-d">
+              <div class="box-d">
                 <h1>2194</h1>
                 <h3>Students</h3>
               </div>
-              <div class="icon-case">
-                <img src="students.png" alt="" />
-              </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card-d">
+              <div class="box-d">
                 <h1>53</h1>
                 <h3>Teachers</h3>
               </div>
-              <div class="icon-case">
-                <img src="teachers.png" alt="" />
-              </div>
             </div>
-            <div class="card">
-              <div class="box">
+            <div class="card-d">
+              <div class="box-d">
                 <h1>5</h1>
                 <h3>Schools</h3>
               </div>
-              <div class="icon-case">
-                <img src="schools.png" alt="" />
-              </div>
             </div>
-            <div class="card">
-              <div class="box">
-                <h1>350000</h1>
+            <div class="card-d">
+              <div class="box-d">
+                <h1>35000</h1>
                 <h3>Income</h3>
-              </div>
-              <div class="icon-case">
-                <img src="income.png" alt="" />
               </div>
             </div>
           </div>
           <div class="content-2">
-            <div class="recent-payments">
+            {/* <div class="recent-payments">
               <div class="title">
                 <h2>Recent Payments</h2>
                 <a href="#" class="btn">
@@ -149,55 +137,54 @@ function Dashboard() {
                   </td>
                 </tr>
               </table>
-            </div>
+            </div> */}
             <div class="new-students">
               <div class="title">
-                <h2>New Students</h2>
-                <a href="#" class="btn">
-                  View All
-                </a>
+                <h2>Register Students</h2>
               </div>
               <table>
                 <tr>
                   <th>Profile</th>
                   <th>Name</th>
-                  <th>option</th>
+                  <th>EmailId</th>
+                  <th>Phone</th>
+                  <th>Gender</th>
                 </tr>
                 <tr>
                   <td>
                     <img src="user.png" alt="" />
                   </td>
                   <td>John Steve Doe</td>
-                  <td>
-                    <img src="info.png" alt="" />
-                  </td>
+                  <td>jhon@gmail.com</td>
+                  <td>9654215361</td>
+                  <td>Male</td>
                 </tr>
                 <tr>
                   <td>
                     <img src="user.png" alt="" />
                   </td>
                   <td>John Steve Doe</td>
-                  <td>
-                    <img src="info.png" alt="" />
-                  </td>
+                  <td>jhon@gmail.com</td>
+                  <td>9654215361</td>
+                  <td>Male</td>
                 </tr>
                 <tr>
                   <td>
                     <img src="user.png" alt="" />
                   </td>
                   <td>John Steve Doe</td>
-                  <td>
-                    <img src="info.png" alt="" />
-                  </td>
+                  <td>jhon@gmail.com</td>
+                  <td>9654215361</td>
+                  <td>Male</td>
                 </tr>
                 <tr>
                   <td>
                     <img src="user.png" alt="" />
                   </td>
                   <td>John Steve Doe</td>
-                  <td>
-                    <img src="info.png" alt="" />
-                  </td>
+                  <td>jhon@gmail.com</td>
+                  <td>9654215361</td>
+                  <td>Male</td>
                 </tr>
               </table>
             </div>

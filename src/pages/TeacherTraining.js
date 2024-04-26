@@ -120,6 +120,8 @@ function TeacherTraining() {
                           <h2 className="Ti">Access to Course</h2>
                           <p className="pi">
                             Teachers will get one year access to abacus Course.
+                            And they will be able to access the code whenever
+                            they require.
                           </p>
                         </div>
                       </div>
@@ -129,8 +131,8 @@ function TeacherTraining() {
                         <div className="tbox-1 f1">
                           <h2 className="Ti">Certification</h2>
                           <p className="pi">
-                            You’ll be able to accelerate your professional
-                            growth easily as never before.
+                            With Certification You’ll be able to accelerate your
+                            professional growth easily as never before.
                           </p>
                         </div>
                       </div>
@@ -160,6 +162,70 @@ function TeacherTraining() {
               </div>
             </div>
           </section>
+          <div className="Teacher-Registration">
+            <main className="reg-main-Teacher">
+              <header className="headerR">
+                <center>
+                  <h3>Teacher Registration</h3>
+                </center>
+              </header>
+
+              <form className="formR">
+                <div className="form_wrapperR">
+                  <span className="reg-title">Teacher Name :</span>
+                  <input
+                    id="inputR"
+                    type="text"
+                    placeholder="Enter Your Fullname "
+                    required
+                  />
+                </div>
+
+                <div className="form_wrapperR">
+                  <span className="reg-title">College Name :</span>
+                  <input
+                    id="inputR"
+                    type="text"
+                    placeholder="Enter Your College Name"
+                    required
+                  />
+                </div>
+
+                <div className="form_wrapperR">
+                  <span className="reg-title">Teacher Contact :</span>
+                  <input
+                    type="tel"
+                    placeholder="Phone No."
+                    name="Phone"
+                    pattern="[0-9]{10}"
+                    id="phoneR"
+                    required
+                  />
+                </div>
+
+                <div className="form_wrapperR">
+                  <span className="reg-title">Teacher Email :</span>
+                  <input
+                    id="emailR"
+                    type="email"
+                    placeholder="Enter Valid Email"
+                    required
+                  />
+                </div>
+
+                <div className="remember_box">
+                  <div className="remember">
+                    <input type="checkbox" />I agree to register for this course
+                  </div>
+                </div>
+                <center>
+                  <button type="submit" className="buttonR">
+                    Register
+                  </button>
+                </center>
+              </form>
+            </main>
+          </div>
         </div>
       </section>
       <Floatingbutton />

@@ -22,7 +22,7 @@ function Footer() {
                 TeacherTraining
               </a>
 
-              <a href="http://localhost:3000/About">About</a>
+              {/* <a href="http://localhost:3000/About">About</a> */}
 
               {/* <a href="#">Faq</a> */}
 
@@ -71,8 +71,11 @@ function Footer() {
             <a href="#">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#">
-              <i className="fab fa-github"></i>
+            <a
+              href="https://youtube.com/@user-ji2hp2re7y?si=rWwh8NBGuP_gHBZn"
+              target="_blank"
+            >
+              <i className="fab fa-youtube"></i>
             </a>
           </div>
         </div>

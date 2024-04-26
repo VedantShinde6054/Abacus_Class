@@ -50,11 +50,7 @@
   margin: auto;
   margin-bottom: 0.9rem;
 }
-/* #P-method {
-  color: white;
-  font-weight: 600;
-  font-size: 50px;
-} */
+
 .teacher-pro2,
 .teacher-pro3,
 .teacher-pro4,
@@ -141,3 +137,35 @@
 #fea-img:hover {
   transform: scale(1.1);
 }
+.Teacher-Registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reg-main-Teacher {
+  margin-top: 50px;
+  width: 800px;
+  padding: 30px;
+  border-radius: 30px;
+  border: 3px solid #31279d;
+  background-color: rgba(255, 255, 255, 0.114);
+  backdrop-filter: blur(25px);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* media qureies */
+/* @media (max-width: 700px) {
+  .teacher-fea {
+    width: 100%;
+  }
+  .teacher-col1 {
+    width: 100%;
+  }
+  .teacher-col2 {
+    width: 100%;
+  }
+  .featureT {
+    width: 90%;
+  }
+} */

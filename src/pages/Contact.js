@@ -105,6 +105,14 @@ function Contact() {
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://youtube.com/@user-ji2hp2re7y?si=rWwh8NBGuP_gHBZn"
+                    target="_blank"
+                  >
+                    <i className="fab fa-youtube"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="form-wrap">

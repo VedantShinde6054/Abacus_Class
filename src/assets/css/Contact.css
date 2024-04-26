@@ -70,7 +70,7 @@
 }
 .info-details li {
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
 }
 .info-details li i {
@@ -84,7 +84,7 @@
   text-decoration: none;
 }
 .info-details li a:hover {
-  color: #f44770;
+  color: #2fff39;
 }
 .social-icons {
   list-style: none;
