@@ -3,6 +3,10 @@ h2 {
   color: #444;
 }
 
+ul , li{
+  padding: 0;
+  margin: 0;
+}
 h3 {
   color: rgb(255, 255, 255);
 }
@@ -30,7 +34,7 @@ td {
 .side-menu {
   position: fixed;
   background: #f05462;
-  width: 25vw;
+  width: 22vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,7 +48,7 @@ td {
   align-items: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .side-menu li {

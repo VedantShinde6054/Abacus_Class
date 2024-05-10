@@ -10,20 +10,22 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
+  const user = auth.currentUser;
   const fetchUserData = async () => {
     try {
       auth.onAuthStateChanged(async (user) => {
         console.log(user);
-        const docRef = doc(db, "Users", user.uid);
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-          setUserDetails(docSnap.data());
-          console.log(docSnap.data());
-        } else {
-          console.log("User is not logged in");
-          toast.error("User is not logged in", {
-            position: "bottom-center",
-          });
+        if (user) {
+          const docRef = doc(db, "Users", user.uid);
+          const docSnap = await getDoc(docRef);
+
+          if (docSnap.exists()) {
+            setUserDetails(docSnap.data());
+          } else {
+            toast.error("User is not logged in", {
+              position: "bottom-center",
+            });
+          }
         }
       });
     } catch (error) {
@@ -84,7 +86,7 @@ function Profile() {
                     id="inputR"
                     type="text"
                     readOnly
-                    value={userDetails.name}
+                    value={user ? userDetails.name : ""}
                   />
                 </div>
 
@@ -94,7 +96,7 @@ function Profile() {
                     id="inputR"
                     type="text"
                     readOnly
-                    value={userDetails.dob}
+                    value={user ? userDetails.dob : ""}
                   />
                 </div>
 
@@ -104,7 +106,7 @@ function Profile() {
                     id="inputR"
                     type="text"
                     readOnly
-                    value={userDetails.gender}
+                    value={user ? userDetails.gender : ""}
                   />
                 </div>
 
@@ -115,7 +117,7 @@ function Profile() {
                     name="Phone"
                     id="phoneR"
                     readOnly
-                    value={userDetails.phone}
+                    value={user ? userDetails.phone : ""}
                   />
                 </div>
 
@@ -125,7 +127,7 @@ function Profile() {
                     id="emailR"
                     type="email"
                     readOnly
-                    value={userDetails.email}
+                    value={user ? userDetails.email : ""}
                   />
                 </div>
 
@@ -150,7 +152,9 @@ function Profile() {
           <ToastContainer />
         </>
       ) : (
-        <p>Loading...</p>
+        <center>
+          <img src={require("../assets/images/student.gif")} alt="" />
+        </center>
       )}
     </Fragment>
   );

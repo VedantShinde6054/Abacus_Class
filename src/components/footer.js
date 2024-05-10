@@ -56,9 +56,8 @@ function Footer() {
 
         <div className="footer-right">
           <p className="footer-company-about">
-            <span>About the company</span>
-            An market leading online and offline Abacus classes for students and
-            teachers.
+            <span>About the Classes</span>
+            An market leading Abacus classes for students and teachers.
           </p>
 
           <div className="footer-icons">

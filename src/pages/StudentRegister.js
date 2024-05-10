@@ -4,15 +4,12 @@ import "../assets/css/Register.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Footer from "../components/footer";
 import { auth, db } from "../Firebase-config";
-// import { collection, addDoc } from "firebase/firestore";
-// import { async } from "@firebase/util";
 import { setDoc, doc } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function StudentRegister() {
-  // const collRef = collection(db, "users");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
@@ -39,10 +36,11 @@ function StudentRegister() {
       console.log("User Registered Successfully!!");
       toast.success("User Registered Successfully!!", {
         position: "top-center",
+        autoClose: 1000,
       });
       setTimeout(function () {
         window.location.href = "/";
-      }, 5000);
+      }, 1500);
     } catch (error) {
       console.log(error.message);
       toast.error(error.message, {
