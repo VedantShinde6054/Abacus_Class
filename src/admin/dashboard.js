@@ -23,14 +23,14 @@ function Dashboard() {
             <img src="teacher2.png" alt="" />
             &nbsp;<span>Teachers Requests</span>{" "}
           </li>
-          <li>
+          {/* <li>
             <img src="school.png" alt="" />
             &nbsp;<span>Add Users</span>{" "}
           </li>
           <li>
             <img src="payment.png" alt="" />
             &nbsp;<span>Content Manager</span>{" "}
-          </li>
+          </li> */}
         </ul>
       </div>
       <div class="container-dashboard">
@@ -61,132 +61,59 @@ function Dashboard() {
               </div>
             </div>
           </div>
+
           <div class="content-2">
-            {/* <div class="recent-payments">
-              <div class="title">
-                <h2>Recent Payments</h2>
-                <a href="#" class="btn">
-                  View All
-                </a>
-              </div>
-              <table>
-                <tr>
-                  <th>Name</th>
-                  <th>School</th>
-                  <th>Amount</th>
-                  <th>Option</th>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Doe</td>
-                  <td>St. James College</td>
-                  <td>$120</td>
-                  <td>
-                    <a href="#" class="btn">
-                      View
-                    </a>
-                  </td>
-                </tr>
-              </table>
-            </div> */}
             <div class="new-students">
               <div class="title">
-                <h2>Register Students</h2>
+                <h2>Student Requests</h2>
               </div>
-              <table>
-                <tr>
-                  <th>Profile</th>
-                  <th>Name</th>
-                  <th>EmailId</th>
-                  <th>Phone</th>
-                  <th>Gender</th>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="user.png" alt="" />
-                  </td>
-                  <td>John Steve Doe</td>
-                  <td>jhon@gmail.com</td>
-                  <td>9654215361</td>
-                  <td>Male</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="user.png" alt="" />
-                  </td>
-                  <td>John Steve Doe</td>
-                  <td>jhon@gmail.com</td>
-                  <td>9654215361</td>
-                  <td>Male</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="user.png" alt="" />
-                  </td>
-                  <td>John Steve Doe</td>
-                  <td>jhon@gmail.com</td>
-                  <td>9654215361</td>
-                  <td>Male</td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="user.png" alt="" />
-                  </td>
-                  <td>John Steve Doe</td>
-                  <td>jhon@gmail.com</td>
-                  <td>9654215361</td>
-                  <td>Male</td>
-                </tr>
-              </table>
+              <div className="scroll-info">
+                <table>
+                  <tr>
+                    <th>Sr.</th>
+                    <th>Name</th>
+                    <th>EmailId</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>John Steve Doe</td>
+                    <td>jhon@gmail.com</td>
+                    <td>9654215361</td>
+                    <td>84-12-211</td>
+                    <td>Male</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="content-2">
+            <div class="new-students">
+              <div class="title">
+                <h2>Teacher Requests</h2>
+              </div>
+              <div className="scroll-info">
+                <table>
+                  <tr>
+                    <th>Sr.</th>
+                    <th>Name</th>
+                    <th>EmailId</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>John Steve Doe</td>
+                    <td>jhon@gmail.com</td>
+                    <td>9654215361</td>
+                    <td>84-12-211</td>
+                    <td>Male</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
