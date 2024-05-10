@@ -130,13 +130,6 @@ function Contact() {
                         value={user ? userDetails.name : ""}
                       />
                     </div>
-                    {/* <div className="form-group">
-                    <input
-                      type="text"
-                      className="lname"
-                      placeholder="Last Name"
-                    />
-                  </div> */}
                     <div className="form-group">
                       <input
                         type="email"

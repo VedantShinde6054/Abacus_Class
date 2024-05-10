@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import Menu from "../components/Menu";
 import "../assets/css/login.css";
 import bgimg from "../assets/images/back-4.jpg";
+import Footer from "../components/footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth, db } from "../Firebase-config";
@@ -18,14 +19,15 @@ function Login() {
       console.log("User logged in Successfully");
       setTimeout(function () {
         window.location.href = "/";
-      }, 5000);
+      }, 1500);
       toast.success("User logged in Successfully", {
         position: "top-center",
+        autoClose: 1000,
       });
     } catch (error) {
       console.log(error.message);
 
-      toast.error(error.message, {
+      toast.error("Can't Login ! " + error.message, {
         position: "bottom-center",
       });
     }
@@ -94,6 +96,7 @@ function Login() {
         </main>
       </div>
       <ToastContainer />
+      <Footer />
     </Fragment>
   );
 }

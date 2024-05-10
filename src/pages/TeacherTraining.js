@@ -1,12 +1,44 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "../assets/css/Teacher.css";
 import bgimg from "../assets/images/back-4.jpg";
 import Menu from "../components/Menu";
 import Footer from "../components/footer";
 import Floatingbutton from "../components/Floatingbutton";
+import { auth, db } from "../Firebase-config";
+import { setDoc, doc, addDoc, collection } from "firebase/firestore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import methodology1 from "../assets/images/teacher.png";
 
 function TeacherTraining() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [inst, setInst] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const user = auth.currentUser;
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    try {
+      // await addDoc(collection(db, "teachers"),
+      await setDoc(doc(db, "teachers", name), {
+        email: email,
+        name: name,
+        institute: inst,
+        phone: phone,
+      });
+      console.log("Registration Completed !! ");
+      toast.success("Registration Completed !! ", {
+        position: "top-center",
+        autoClose: 5000,
+      });
+    } catch (error) {
+      console.log(error.message);
+      toast.error(error.message, {
+        position: "bottom-center",
+      });
+    }
+  };
   return (
     <Fragment>
       <Menu />
@@ -162,74 +194,89 @@ function TeacherTraining() {
               </div>
             </div>
           </section>
-          <div className="Teacher-Registration">
-            <main className="reg-main-Teacher">
-              <header className="headerR">
-                <center>
-                  <h3>Teacher Registration</h3>
-                </center>
-              </header>
 
-              <form className="formR">
-                <div className="form_wrapperR">
-                  <span className="reg-title">Teacher Name :</span>
-                  <input
-                    id="inputR"
-                    type="text"
-                    placeholder="Enter Your Fullname "
-                    required
-                  />
-                </div>
+          {!user ? (
+            <>
+              <div className="Teacher-Registration">
+                <main className="reg-main-Teacher">
+                  <header className="headerR">
+                    <center>
+                      <h3>Teacher Registration</h3>
+                    </center>
+                  </header>
 
-                <div className="form_wrapperR">
-                  <span className="reg-title">College Name :</span>
-                  <input
-                    id="inputR"
-                    type="text"
-                    placeholder="Enter Your College Name"
-                    required
-                  />
-                </div>
+                  <form className="formR" onSubmit={handleRegister}>
+                    <div className="form_wrapperR">
+                      <span className="reg-title">Teacher Name :</span>
+                      <input
+                        id="inputR"
+                        type="text"
+                        placeholder="Enter Your Fullname "
+                        required
+                        onChange={(event) => {
+                          setName(event.target.value);
+                        }}
+                      />
+                    </div>
 
-                <div className="form_wrapperR">
-                  <span className="reg-title">Teacher Contact :</span>
-                  <input
-                    type="tel"
-                    placeholder="Phone No."
-                    name="Phone"
-                    pattern="[0-9]{10}"
-                    id="phoneR"
-                    required
-                  />
-                </div>
+                    <div className="form_wrapperR">
+                      <span className="reg-title">Institute Name :</span>
+                      <input
+                        id="inputR"
+                        type="text"
+                        placeholder="Enter Your College/School Name"
+                        required
+                        onChange={(event) => {
+                          setInst(event.target.value);
+                        }}
+                      />
+                    </div>
 
-                <div className="form_wrapperR">
-                  <span className="reg-title">Teacher Email :</span>
-                  <input
-                    id="emailR"
-                    type="email"
-                    placeholder="Enter Valid Email"
-                    required
-                  />
-                </div>
+                    <div className="form_wrapperR">
+                      <span className="reg-title">Teacher Contact :</span>
+                      <input
+                        type="tel"
+                        placeholder="Phone No."
+                        name="Phone"
+                        pattern="[0-9]{10}"
+                        id="phoneR"
+                        required
+                        onChange={(event) => {
+                          setPhone(event.target.value);
+                        }}
+                      />
+                    </div>
 
-                <div className="remember_box">
-                  <div className="remember">
-                    <input type="checkbox" />I agree to register for this course
-                  </div>
-                </div>
-                <center>
-                  <button type="submit" className="buttonR">
-                    Register
-                  </button>
-                </center>
-              </form>
-            </main>
-          </div>
+                    <div className="form_wrapperR">
+                      <span className="reg-title">Teacher Email :</span>
+                      <input
+                        id="emailR"
+                        type="email"
+                        placeholder="Enter Valid Email"
+                        required
+                        onChange={(event) => {
+                          setEmail(event.target.value);
+                        }}
+                      />
+                    </div>
+
+                    <center>
+                      <button type="submit" className="buttonR">
+                        Register For Training
+                      </button>
+                    </center>
+                  </form>
+                </main>
+              </div>
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </section>
       <Floatingbutton />
       <Footer />
+      <ToastContainer />
     </Fragment>
   );
 }
