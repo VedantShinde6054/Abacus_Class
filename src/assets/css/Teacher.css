@@ -39,10 +39,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin-right: -15px;
   margin-left: -15px;
   margin: 55px 0;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 .teacher-pro1 {
   text-align: center;
@@ -59,6 +61,7 @@
   flex: 0 0 25%;
   max-width: 20%;
   margin: 10px 30px;
+  min-width: 250px;
 }
 .tbox-1 {
   background-color: rgba(128, 255, 0, 0.816);
@@ -98,7 +101,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .teacher-col1 {
   flex: 0 0 65%;
@@ -112,6 +115,8 @@
   flex: 0 0 50%;
   max-width: 50%;
   padding: 10px;
+  flex: 1;
+  margin: 10px;
 }
 .pro-fea {
   text-align: center;
@@ -155,17 +160,28 @@
 }
 
 /* media qureies */
-/* @media (max-width: 700px) {
-  .teacher-fea {
-    width: 100%;
-  }
-  .teacher-col1 {
-    width: 100%;
-  }
-  .teacher-col2 {
-    width: 100%;
+@media (max-width: 950px) {
+  .teacher-pro2,
+  .teacher-pro3,
+  .teacher-pro4,
+  .teacher-pro5 {
+    min-width: 100%;
+    margin: 10px 0;
   }
   .featureT {
-    width: 90%;
+    min-width: 100%;
+    margin: 10px 0;
   }
-} */
+  .teacher-col1,
+  .teacher-col2 {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .methodologyimg {
+    width: 80px;
+    height: 80px;
+  }
+}
