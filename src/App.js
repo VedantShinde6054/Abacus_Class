@@ -1,5 +1,7 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
+import { db } from "./Firebase-config";
+import { getDoc, doc } from "firebase/firestore";
 import {
   BrowserRouter as Router,
   Routes,
@@ -24,6 +26,7 @@ function App() {
       setUser(user);
     });
   });
+
   return (
     <div className="App">
       <Router>
@@ -44,7 +47,12 @@ function App() {
             element={user ? <Navigate to="/Profile" /> : <Login />}
           />
           <Route path="/Contact" element={<Contact />} />
+
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="/dashboard"
+            element={user ? <Navigate to="/dashboard" /> : <Profile />}
+          />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
