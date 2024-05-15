@@ -231,3 +231,12 @@ td {
     width: 90%;
   }
 }
+
+.link-go{
+text-decoration: none;
+color: white;
+}
+
+.link-go:hover{
+  color: #f05462;
+}
