@@ -1,9 +1,33 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Continuous from "./continuous";
 import { auth, db } from "../Firebase-config";
+import { getDoc, doc } from "firebase/firestore";
 function Menu() {
   const user = auth.currentUser;
+  const [userDetails, setUserDetails] = useState(null);
+  const fetchUserData = async () => {
+    try {
+      auth.onAuthStateChanged(async (user) => {
+        console.log(user);
+        if (user) {
+          const docRef = doc(db, "Admin", user.uid);
+          const docSnap = await getDoc(docRef);
+
+          if (docSnap.exists()) {
+            setUserDetails(docSnap.data());
+          } else {
+            console.log("Error");
+          }
+        }
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  useEffect(() => {
+    fetchUserData();
+  }, []);
   return (
     <Fragment>
       <div>
@@ -43,11 +67,16 @@ function Menu() {
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link mx-lg-2" to="/StudentRegister">
-                      Admission
-                    </Link>
-                  </li>
+                  {!userDetails ? (
+                    <li className="nav-item">
+                      <Link className="nav-link mx-lg-2" to="/StudentRegister">
+                        Admission
+                      </Link>
+                    </li>
+                  ) : (
+                    ""
+                  )}
+
                   <li className="nav-item">
                     <Link className="nav-link mx-lg-2" to="/TeacherTraining">
                       Teacher training
@@ -66,15 +95,37 @@ function Menu() {
                 </ul>
               </div>
             </div>
-            {user ? (
+
+            {userDetails ? (
+              <Link className="login-button" to="/dashboard">
+                Dashboard
+              </Link>
+            ) : (
+              // <Link className="login-button" to="/Login">
+              //   Account
+              // </Link>
+              ""
+            )}
+
+            {user && !userDetails ? (
               <Link className="login-button" to="/Profile">
                 Account
               </Link>
             ) : (
+              // <Link className="login-button" to="/Login">
+              //   Account
+              // </Link>
+              ""
+            )}
+
+            {!userDetails && !user ? (
               <Link className="login-button" to="/Login">
                 Account
               </Link>
+            ) : (
+              ""
             )}
+
             <button
               className="navbar-toggler pe-0"
               type="button"

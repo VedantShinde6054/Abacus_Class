@@ -225,3 +225,12 @@ td {
     display: none;
   }
 }
+
+.link-go{
+text-decoration: none;
+color: white;
+}
+
+.link-go:hover{
+  color: #f05462;
+}
