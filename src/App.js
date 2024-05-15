@@ -11,7 +11,7 @@ import {
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-// import About from "./pages/About";
+import About from "./pages/About";
 import Register from "./pages//StudentRegister";
 import TeacherTraining from "./pages/TeacherTraining";
 import Dashboard from "./admin/dashboard";
